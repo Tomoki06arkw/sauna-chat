@@ -10,6 +10,11 @@
 | nickname | string | null: false |
 | profile  | text   | null: false |
 
+### Association
+
+- has_many :chats
+- has_many :comments
+
 ## chats テーブル
 
 | Column | Type   | Options     |
@@ -18,6 +23,11 @@
 | area_id| integer| null:false  |
 | sauna  | string | null:false  |
 | user   | references | null:false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- has_many :comments
 
 ## comments テーブル
 
