@@ -32,7 +32,7 @@
   float: left;
   padding-top: 15px;
   font-size: 25px;
-  
+  padding: 10 10px;
 }
 
 .header-menu-right a {
@@ -120,7 +120,7 @@ footer {
 }
 
 #faq-list {
-  width: 500px;
+  width: 400px;
   margin: 0 auto;
   list-style: none;
 }
@@ -134,8 +134,12 @@ footer {
   text-align: left;
 }
 
+.heading h2 {
+  font-size: 25px;
+}
+
 .faq-list-item h3 {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .faq-list-item span {
@@ -152,6 +156,7 @@ footer {
   padding: 5px 0px;
   margin-bottom: 15px;
 }
+
 
 
 @media (max-width: 1024px) {
@@ -190,6 +195,7 @@ footer {
   .inner {
     width: 100%;
     margin: 0 auto;
+    text-align:center
   }
 
   .page-heading {
@@ -240,7 +246,7 @@ footer {
   }
   .header-menu-right li {
     padding-bottom: 10px;
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .inner {
@@ -262,8 +268,16 @@ footer {
   }
 
   #faq-list {
-    width: 200px;
+    width: 100vw;
     margin: 0 auto;
     list-style: none;
+  }
+
+
+  .heading h2 {
+    font-size: 25px;
+  }
+  .faq-list-item h3 {
+    font-size: 15px;
   }
 }
