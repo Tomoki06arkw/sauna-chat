@@ -1,5 +1,5 @@
 .header-wrapper {
-  height: 100px;
+  height: 120px;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,25 +19,27 @@
 .header-logo {
   color: #777;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 39px;
   font-family: 'Dosis', sans-serif;
   cursor: pointer;
 }
 
 .header-menu-right {
   float: right;
+  display: inline-block;
 }
 
 .header-menu-right li {
   float: left;
   padding-top: 15px;
   font-size: 25px;
+  
 }
 
 .header-menu-right a {
   color: #323A45;
   font-weight: 700;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .header-menu-right a:hover {
@@ -118,22 +120,70 @@ footer {
 }
 }
 
-@media (max-width: 599px) {
+@media (max-width:800px) {
+
+  
+  .header-logo {
+    color: #777;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+  }
+  .header-menu-right li {
+    
+    font-size: 20px;
+  }
+  
+  .inner {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .page-heading {
+    font-size: 20px;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .card__title {
+    font-size: 18px;
+  }
+  .card__summary {
+    font-size: 14px;
+  }
+}
+  
+
+@media (max-width: 620px) {
+  .header-title {
+    padding: 0 0 0 10px;
+  }
+}
+
+@media (max-width: 400px) {
+
+.header-title {
+  padding: 0 0 0 10px;
+  
+}
+
+.header-logo {
+  color: #777;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: 'Dosis', sans-serif;
+  cursor: pointer;
+}
+.header-menu-right li {
+  padding-bottom: 10px;
+  font-size: 10px;
+}
+
 .inner {
   width: 100%;
   margin: 0 auto;
 }
-.header-title {
-  font-size: 30px;
-  padding: 0 0 0
-}
-
-.header-menu-right li {
-  float: left;
-  padding-top: 10px;
-  font-size: 15px;
-}
-
 .page-heading {
   font-size: 20px;
 }
