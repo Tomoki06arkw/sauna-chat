@@ -1,0 +1,149 @@
+.header-wrapper {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  line-height: 50px;
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.header-title {
+  float: left;
+  font-size: 30px;
+  padding: 20px 30px;
+}
+
+.header-logo {
+  color: #777;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: 'Dosis', sans-serif;
+  cursor: pointer;
+}
+
+.header-menu-right {
+  float: right;
+}
+
+.header-menu-right li {
+  float: left;
+  padding-top: 15px;
+  font-size: 25px;
+}
+
+.header-menu-right a {
+  color: #323A45;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.header-menu-right a:hover {
+  color: #5983ff;
+  transition: color .3s;
+}
+
+
+.main {
+  margin-top: 150px;
+}
+
+footer {
+  width: 100%;
+  background: lightskyblue;
+  color: rgba(255,255,255,.8);
+  text-align: center;
+}
+
+.footer-nav li {
+  padding: 30px;
+}
+.footer-nav a {
+  color: #d5d7e4;
+}
+
+.page-heading {
+font-size: 30px;
+margin-bottom: 28px;
+}
+.card__wrapper {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+}
+.card {
+width: calc((100% - 50px) / 3);
+margin-bottom: 40px;
+}
+.card__img {
+margin-bottom: 16px;
+}
+.card__title {
+font-size: 24px;
+margin-bottom: 8px;
+}
+.card__summary {
+font-size: 18px;
+}
+.footer {
+background-color: #999;
+padding: 10px 0;
+}
+.copyright {
+text-align: center;
+color: #fff;
+font-size: 10px;
+}
+
+
+@media (max-width: 1024px) {
+.inner {
+  width: 90%;
+  margin: 0 auto;
+}
+.page-heading {
+  font-size: 24px;
+}
+.card {
+  width: 48%;
+  margin-bottom: 40px;
+}
+.card__title {
+  font-size: 20px;
+}
+.card__summary {
+  font-size: 16px;
+}
+}
+
+@media (max-width: 599px) {
+
+.header-title {
+  font-size: 30px;
+  padding: 0 0 0 15px;
+}
+
+.header-menu-right li {
+  float: left;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.page-heading {
+  font-size: 20px;
+}
+.card {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.card__title {
+  font-size: 18px;
+}
+.card__summary {
+  font-size: 14px;
+}
+
+}
