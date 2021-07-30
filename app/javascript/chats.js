@@ -4,3 +4,18 @@ $(function(){
     $(this).toggleClass("open");
   });
 });
+
+
+$(function(){
+  const INDEX = "-visible";
+  const TIMEOUT = 2000;
+  const $target = $(".title");
+
+    setInterval(() => {
+      $target.addClass(INDEX);
+      setTimeout(() => {
+        $target.removeClass(INDEX);
+      }, TIMEOUT);
+    }, TIMEOUT * 2);
+});
+

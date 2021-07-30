@@ -102,7 +102,7 @@ font-size: 10px;
 footer {
   width: 100%;
   color: rgba(255,255,255,.8);
-  
+  background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
 }
 
 .footer-nav li {
@@ -202,7 +202,6 @@ footer {
 .s_01 .accordion_one .accordion_inner p.txt_a_ac {
   margin: 0;
 }
-
 
 @media (max-width: 1024px) {
 .inner {
