@@ -5,7 +5,6 @@ $(function(){
   });
 });
 
-
 $(function(){
   const INDEX = "-visible";
   const TIMEOUT = 2000;
@@ -18,4 +17,8 @@ $(function(){
       }, TIMEOUT);
     }, TIMEOUT * 2);
 });
+
+$(function(){
+  $('h1').fadeIn(10000);
+})
 
