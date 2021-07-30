@@ -5,6 +5,7 @@ $(function(){
   });
 });
 
+
 $(function(){
   const INDEX = "-visible";
   const TIMEOUT = 2000;
@@ -17,3 +18,4 @@ $(function(){
       }, TIMEOUT);
     }, TIMEOUT * 2);
 });
+
