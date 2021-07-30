@@ -18,4 +18,3 @@ $(function(){
       }, TIMEOUT);
     }, TIMEOUT * 2);
 });
-
