@@ -10,15 +10,21 @@ $(function(){
   const TIMEOUT = 2000;
   const $target = $(".title");
 
-    setInterval(() => {
-      $target.addClass(INDEX);
-      setTimeout(() => {
-        $target.removeClass(INDEX);
-      }, TIMEOUT);
-    }, TIMEOUT * 2);
+  setInterval(() => {
+    $target.addClass(INDEX);
+    setTimeout(() => {
+      $target.removeClass(INDEX);
+    }, TIMEOUT);
+  }, TIMEOUT * 2);
 });
 
 $(function(){
   $('h1').fadeIn(10000);
-})
+});
+
+$(function(){
+  $('#top-btn').on('click', function(){
+    $(window).scrollTop(0);  
+  });
+});
 
