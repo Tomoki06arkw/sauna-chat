@@ -4,8 +4,6 @@ $(function(){
     $(this).toggleClass("open");
   });
 });
-<<<<<<< Updated upstream
-=======
 
 $(function(){
   const INDEX = "-visible";
@@ -23,4 +21,4 @@ $(function(){
 $(function(){
   $('h1').fadeIn(10000);
 })
->>>>>>> Stashed changes
+
