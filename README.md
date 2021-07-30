@@ -9,6 +9,7 @@
 | password | string | null: false |
 | nickname | string | null: false |
 | profile  | text   | null: false |
+| text     | text   | null: false |
 
 ### Association
 
