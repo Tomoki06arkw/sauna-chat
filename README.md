@@ -18,12 +18,14 @@
 
 ## chats テーブル
 
-| Column | Type   | Options     |
-| ------ | ------ | ----------- |
-| image  | active | null: false |
-| area_id| integer| null:false  |
-| sauna  | string | null:false  |
-| user   | references | null:false, foreign_key: true |
+| Column       | Type        | Options     |
+| ------------ | ----------- | ----------- |
+| image        | active      | null: false |
+| area_id      | integer     | null:false  |
+| price        | integer     | null: false |
+| sauna-name   | string      | null:false  |
+| description  | text        | null: false |
+| user         | references  | null:false, foreign_key: true |
 
 ### Association
 
@@ -32,11 +34,11 @@
 
 ## comments テーブル
 
-| Column  | Type          |Options                        |
-| --------| ------         |----------------------------- |
-| text    | text           | null: false                    |
-| user    | references    | null: false, foreign_key: true |
-| prototype  | references | null: false, foreign_key: true |
+| Column     | Type          ｜Options                        |
+| -----------| --------------|--------------------------------|
+| text       | text          | null:false                     |
+| user       | references    | null: false, foreign_key: true |
+| prototype  | references    | null: false, foreign_key: true |
 
 ### Association
 

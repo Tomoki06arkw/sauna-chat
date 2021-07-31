@@ -6,8 +6,9 @@
         <div class="header-menu">
           <ul class="header-menu-right">
             <% if user_signed_in? %>
+              <li><%= link_to "#{current_user.nickname}", "#", class: "user-nickname" %></li>
+              <li><%= link_to "新規投稿", new_chat_path, class: "new-post" %>
               <li><%= link_to "ログアウト",  destroy_user_session_path, method: :delete, class: "logout" %></li>
-              <li><%= link_to "新規投稿", "#", class: "new-post" %>
             <% else %>
               <li><%= link_to "ログイン", new_user_session_path, class: "login" %></li>
               <li><%= link_to "アカウント作成", new_user_registration_path, class: "sign-up" %></li>
@@ -33,23 +34,20 @@
       <span>。</span>
     </div> 
   </div>    
-  <h1 class="title-1">最高のととのいを</h1>
+  <h1 class="title-1">関西サ活情報</h1>
   <main class="main">
     <div class="inner">
-    <% if user_signed_in? %>
-      <%= "こんにちは！" %>
-      <%= link_to "#{current_user.nickname}", "#", class: "user-nickname" %>
-    <% else %>
-      <%= "こんにちは！ゲストさん" %>
-    <% end %>
-      <h1 class="page-heading">投稿一覧</h1>
+      <h1 class="page-heading">みんなのサ活</h1>
       <div class="card__wrapper">
         <div class="card">
-          
+          <%= render partial: "chat", collection: @chats %>
           <div class="card__body">
-            <h2 class="card__title">タイトル</h2>
+            <h2 class="card__title">タイトル
+            <%# <%= @chat.sauna_name%> 
+            </h2>
             <p class="card__summary">
               サウナ情報が入ります。
+              <%# <%= image_tag chat.image.variant(resize: '500x500'), class: "chat-image" if chat.image.attached?%>
             </p>
           </div>
         </div>
