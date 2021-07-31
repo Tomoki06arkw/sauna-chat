@@ -4,6 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  has_many :chats
+
   with_options presence: true do
         validates :name
         validates :email
@@ -12,7 +14,5 @@ class User < ApplicationRecord
         validates :profile
         validates :experience
   end
-
-  has_many :chats
   
 end

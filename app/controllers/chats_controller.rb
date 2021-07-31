@@ -14,4 +14,5 @@ class ChatsController < ApplicationController
 
   def chat_params
     params.require(:chat).permit(:image, :area_id, :price, :sauna_name, :description).merge(user_id: current_user.id)
+  end
 end
