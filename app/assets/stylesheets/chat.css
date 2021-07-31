@@ -61,6 +61,18 @@ margin-bottom: 28px;
 text-align: center;
 }
 
+.field {
+  text-align: center;
+}
+
+.actions {
+  text-align: center;
+}
+
+.form__btn {
+  font-size: 20px;
+}
+
 .card__wrapper {
 display: flex;
 flex-wrap: wrap;
@@ -81,6 +93,11 @@ margin-bottom: 8px;
 }
 .card__summary {
 font-size: 18px;
+}
+
+.card__img {
+  width: 33vh;
+  height: 33vh;
 }
 
 .btn {
