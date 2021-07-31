@@ -242,18 +242,4 @@ footer {
   .card__summary {
     font-size: 14px;
   }
-
-  #faq-list {
-    width: 100vw;
-    margin: 0 auto;
-    list-style: none;
-  }
-
-
-  .heading h2 {
-    font-size: 25px;
-  }
-  .faq-list-item h3 {
-    font-size: 15px;
-  }
 }

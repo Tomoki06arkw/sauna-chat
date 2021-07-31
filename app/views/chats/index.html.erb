@@ -39,8 +39,8 @@
     <div class="inner">
       <h1 class="page-heading">みんなのサ活</h1>
       <div class="card__wrapper">
+      <%= render partial: "chat", collection: @chats %>
         <div class="card">
-          <%= render partial: "chat", collection: @chats %>
           <div class="card__body">
             <h2 class="card__title">タイトル
             <%# <%= @chat.sauna_name%> 
@@ -48,50 +48,6 @@
             <p class="card__summary">
               サウナ情報が入ります。
               <%# <%= image_tag chat.image.variant(resize: '500x500'), class: "chat-image" if chat.image.attached?%>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          
-          <div class="card__body">
-            <h2 class="card__title">タイトル</h2>
-            <p class="card__summary">
-              サウナ情報が入ります。
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          
-          <div class="card__body">
-            <h2 class="card__title">タイトル</h2>
-            <p class="card__summary">
-              サウナ情報が入ります。
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          
-          <div class="card__body">
-            <h2 class="card__title">タイトル</h2>
-            <p class="card__summary">
-              サウナ情報が入ります。
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          
-          <div class="card__body">
-            <h2 class="card__title">タイトル</h2>
-            <p class="card__summary">
-              サウナ情報が入ります。
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__body">
-            <h2 class="card__title">タイトル</h2>
-            <p class="card__summary">
-              サウナ情報が入ります。
             </p>
           </div>
         </div>
