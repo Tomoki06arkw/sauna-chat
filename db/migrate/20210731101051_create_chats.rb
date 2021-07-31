@@ -6,7 +6,6 @@ class CreateChats < ActiveRecord::Migration[6.0]
       t.string  :sauna_name,        null: false
       t.text    :description,       null: false
       t.references :user,           foregin_key: true
-      
       t.timestamps
     end
   end

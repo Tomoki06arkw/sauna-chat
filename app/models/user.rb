@@ -12,5 +12,7 @@ class User < ApplicationRecord
         validates :profile
         validates :experience
   end
+
+  has_many :chats
   
 end
