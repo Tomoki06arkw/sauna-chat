@@ -5,10 +5,12 @@
         <%= "サウナ画像"%>
       </p>
       <%= link_to "#{@chat.user.name}", root_path, class: :chat__user %>
+      <% if user_signed_in? && current_user.id == @chat.user_id%>
         <div class="chat__manage">
           <%= link_to "編集する", edit_chat_path(@chat.id), class: :chat__btn %>
           <%= link_to "削除する", chat_path(@chat.id), method: :delete, class: :chat__btn %>
         </div>
+      <% end %>
       <div class="chat__image">
         <%= image_tag @chat.image, class: "card__img" %>
       </div>
@@ -47,3 +49,7 @@
     </div>
   </div>
 </main>
+<footer>
+  <div class="back_to_btn">
+    <%= link_to 'トップページに戻る', root_path, class: :back_btn %>
+</footer>

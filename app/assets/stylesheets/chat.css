@@ -156,6 +156,16 @@ footer {
   text-align: center;
 }
 
+.back_to_btn {
+  text-align: center;
+  background-color: white;
+}
+
+.back_btn {
+  text-decoration: none;
+  font-size: 20px;
+}
+
 @media (max-width: 1024px) {
 .inner {
   width: 100%;
