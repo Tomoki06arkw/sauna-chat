@@ -18,6 +18,10 @@ class ChatsController < ApplicationController
     end
   end
 
+  def show
+    @chat = Chat.find(params[:id])
+  end
+
   private
   
   def move_to_index
