@@ -90,9 +90,9 @@
   overflow: hidden;
   color: #aa8f7b;
   font-family: 'JosefinE Sans', sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   justify-content: center;
-  margin-top: 50px;
+  margin: 50px 0 20px 0;
 }
 
 .title span {
@@ -149,7 +149,7 @@
 .title-1 {
   display: none;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   color: lightskyblue;
 }
 

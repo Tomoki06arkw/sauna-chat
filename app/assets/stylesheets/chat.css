@@ -58,7 +58,6 @@
 
 .inner {
   margin-top: 150px;
-
 }
 
 
@@ -66,6 +65,7 @@
 font-size: 30px;
 margin-bottom: 28px;
 text-align: center;
+color: #5983ff;
 }
 
 .field {
@@ -154,6 +154,16 @@ footer {
 
 .chat__wrapper {
   text-align: center;
+}
+
+.back_to_btn {
+  text-align: center;
+  background-color: white;
+}
+
+.back_btn {
+  text-decoration: none;
+  font-size: 20px;
 }
 
 @media (max-width: 1024px) {

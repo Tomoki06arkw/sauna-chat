@@ -22,6 +22,28 @@ class ChatsController < ApplicationController
     @chat = Chat.find(params[:id])
   end
 
+  def edit
+    @chat = Chat.find(params[:id])
+  end
+
+  def update
+    @chat = Chat.find(params[:id])
+    if @chat.update(chat_params)
+      redirect_to chat_path
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @chat = Chat.find(params[:id])
+    if @chat.destroy
+    redirect_to root_path
+    end
+  end
+
+  
+
   private
   
   def move_to_index
