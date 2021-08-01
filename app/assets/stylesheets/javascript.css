@@ -82,7 +82,9 @@
 .s_01 .accordion_one .accordion_inner p.txt_a_ac {
   margin: 0;
 }
-
+.content{
+  margin-top: 150px;
+}
 .title {
   display: flex;
   overflow: hidden;
@@ -147,7 +149,7 @@
 .title-1 {
   display: none;
   text-align: center;
-  font-size: 18px;
+  font-size: 30px;
   color: lightskyblue;
 }
 

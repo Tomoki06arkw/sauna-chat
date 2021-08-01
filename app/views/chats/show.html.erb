@@ -1,0 +1,31 @@
+<main class="main">
+  <div class="inner">
+    <div class="chat__wrapper">
+      <p class="chat__hedding">
+        <%= "サウナ画像"%>
+      </p>
+      <%= link_to "#{@chat.user.name}", root_path, class: :chat__user %>
+        <div class="chat__manage">
+          <%= link_to "編集する", root_path, class: :chat__btn %>
+          <%= link_to "削除する", root_path, class: :chat__btn %>
+        </div>
+      <div class="chat__image">
+        
+      </div>
+      <div class="chat__body">
+        <div class="chat__detail">
+          <p class="detail__title">キャッチコピー</p>
+          <p class="detail__message">
+            <%= "chat-price" %>
+          </p>
+        </div>
+        <div class="chat__detail">
+          <p class="chat__description">コンセプト</p>
+          <p class="detail__message">
+            <%= "chat-description" %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
