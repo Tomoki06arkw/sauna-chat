@@ -2,6 +2,8 @@ $(function(){
   $('.s_01 .accordion_one .accordion_header').on('click',function(){
     $(this).next('.accordion_inner').slideToggle();
     $(this).toggleClass("open");
+    $('.s_01 .accordion_one .accordion_header').not($(this)).next('.accordion_one .accordion_inner').slideUp();
+    $('.s_01 .accordion_one .accordion_header').not($(this)).removeClass("open");
   });
 });
 

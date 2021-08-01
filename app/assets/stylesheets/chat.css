@@ -49,7 +49,6 @@
 }
 
 .main {
-  margin-top: 300px;
   max-width: 1000px;
   margin: 50px auto;
   background: #fff;
@@ -63,9 +62,11 @@
 
 .page-heading {
 font-size: 30px;
-margin-bottom: 28px;
-text-align: center;
 color: #5983ff;
+}
+
+.sub-heading {
+  margin-bottom: 50px;
 }
 
 .field {
@@ -90,16 +91,6 @@ align-items: center;
 .card {
 width: calc((100% - 50px) / 3);
 margin-bottom: 40px;
-}
-.card__img {
-margin-bottom: 16px;
-}
-.card__title {
-font-size: 24px;
-margin-bottom: 8px;
-}
-.card__summary {
-font-size: 18px;
 }
 
 .card__img {
@@ -141,8 +132,6 @@ footer {
   text-align: center;
   font-size: 25px;
 }
-
-
 
 .text-contents {
   margin: 3% auto;
