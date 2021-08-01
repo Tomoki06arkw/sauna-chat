@@ -4,7 +4,7 @@
 }
 .s_01 .accordion_one .accordion_header {
   color: black;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   padding: 20px 11%;
   text-align: center;
@@ -73,7 +73,7 @@
 }
 .s_01 .accordion_one .accordion_inner {
   display: none;
-  padding: 30px 30px;
+  padding: 10px 10px;
   box-sizing: border-box;
 }
 .s_01 .accordion_one .accordion_inner .box_one {
@@ -81,6 +81,8 @@
 }
 .s_01 .accordion_one .accordion_inner p.txt_a_ac {
   margin: 0;
+  text-align: center;
+  
 }
 .content{
   margin-top: 150px;

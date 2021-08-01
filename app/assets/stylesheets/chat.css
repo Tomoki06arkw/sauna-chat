@@ -8,7 +8,7 @@
   line-height: 50px;
   box-shadow: -1px 1px 1px rgba(0,0,0,0.1);
   z-index: 10;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 .header-title {
@@ -118,6 +118,7 @@ footer {
   width: 100%;
   color: rgba(255,255,255,.8);
   background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+  border-radius: 5%;
 }
 
 .footer-nav li {
