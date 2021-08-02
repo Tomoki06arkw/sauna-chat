@@ -19,7 +19,7 @@
           <ul class="header-menu-right">
             <% if user_signed_in? %>
               <%# //ニックネームは６文字までそれ以上にするとビューが崩れます %>
-              <li><%= link_to "#{current_user.nickname}", "#", class: "user-nickname" %></li>
+              <li><%= link_to "#{current_user.nickname}", user_path(current_user.id), class: "user-nickname" %></li>
               <li><%= link_to "新規投稿", new_chat_path, class: "new-post" %>
               <li><%= link_to "ログアウト",  destroy_user_session_path, method: :delete, class: "logout" %></li>
             <% else %>

@@ -1,8 +1,10 @@
 class ChatsController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
+  before_action :set_chat, only: [:show, :edit, :update, :destroy]
+
 
   def index
-    @chats = Chat.all.order("created_at DESC")
+    @chats = Chat.includes(:user).order("created_at DESC")
   end
 
   def new
@@ -19,17 +21,14 @@ class ChatsController < ApplicationController
   end
 
   def show
-    @chat = Chat.find(params[:id])
     @comment = Comment.new
     @comments = @chat.comments.includes(:user)
   end
 
   def edit
-    @chat = Chat.find(params[:id])
   end
 
   def update
-    @chat = Chat.find(params[:id])
     if @chat.update(chat_params)
       redirect_to chat_path
     else
@@ -38,7 +37,6 @@ class ChatsController < ApplicationController
   end
 
   def destroy
-    @chat = Chat.find(params[:id])
     if @chat.destroy
     redirect_to root_path
     end
@@ -57,5 +55,8 @@ class ChatsController < ApplicationController
   def chat_params
     params.require(:chat).permit(:image, :area_id, :price, :sauna_name, :description).merge(user_id: current_user.id)
   end
-  
+
+  def set_chat
+    @chat = Chat.find(params[:id])
+  end
 end
