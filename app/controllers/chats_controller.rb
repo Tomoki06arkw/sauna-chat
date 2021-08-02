@@ -20,6 +20,8 @@ class ChatsController < ApplicationController
 
   def show
     @chat = Chat.find(params[:id])
+    @comment = Comment.new
+    @comments = @chat.comments.includes(:user)
   end
 
   def edit
