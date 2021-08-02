@@ -61,12 +61,13 @@
 
 
 .page-heading {
-font-size: 30px;
-color: #5983ff;
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
 }
 
 .sub-heading {
-  margin-bottom: 50px;
+  margin-bottom: 5px;
 }
 
 .field {
@@ -107,12 +108,12 @@ margin-bottom: 40px;
 background-color: #999;
 padding: 10px 0;
 }
+
 .copyright {
 text-align: center;
 color: #fff;
 font-size: 10px;
 }
-
 
 footer {
   width: 100%;
@@ -131,7 +132,7 @@ footer {
 
 .heading {
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .text-contents {
@@ -163,9 +164,7 @@ footer {
   width: 100%;
   margin: 150 auto 0;
 }
-.page-heading {
-  font-size: 24px;
-}
+
 .card {
   width: 48%;
   margin-bottom: 40px;
@@ -198,7 +197,7 @@ footer {
   }
 
   .page-heading {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .card {
@@ -256,7 +255,7 @@ footer {
     font-size: 15px;
   }
   .page-heading {
-    font-size: 20px;
+    font-size: 25px;
   }
   .card {
     width: 100%;
