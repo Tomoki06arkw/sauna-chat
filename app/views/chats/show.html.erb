@@ -41,12 +41,12 @@
           <% end %> 
         <% end %>
         <ul class="comments_lists">
-              <% @comments.each do |comment| %>
-                <li class="comments_list">
-                 <%= comment.text %>
-                 <%= link_to "(#{comment.user.name})", "#" %>
-                </li>
-              <% end %>
+          <% @comments.each do |comment| %>
+            <li class="comments_list">
+              <%= comment.text %>
+              <%= link_to "(#{comment.user.name})", "#" %>
+            </li>
+          <% end %>
         </ul>
       </div> 
     </div>
@@ -55,4 +55,5 @@
 <footer>
   <div class="back_to_btn">
     <%= link_to 'トップページに戻る', root_path, class: :back_btn %>
+  </div>
 </footer>
