@@ -46,14 +46,17 @@
             </div>
           <% end %> 
         <% end %>
-        <ul class="comments_lists">
-          <% @comments.each do |comment| %>
-            <li class="comments_list">
-              <%= comment.text %>
-              <%= link_to "(#{comment.user.name})", "#" %>
-            </li>
-          <% end %>
-        </ul>
+        <div class="chat-all">
+            <%= "チャット一覧" %>
+          <ul class="comments_lists">
+            <% @comments.each do |comment| %>
+              <li class="comments_list">
+                <%= comment.text %>
+                <%= link_to "(#{comment.user.name})", "#" %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
       </div> 
     </div>
   </div>
