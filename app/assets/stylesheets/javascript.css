@@ -11,7 +11,7 @@ main {
   display:none;
 }
 .overLay {
-  position:absolute;
+  position:absolute¥;
   top:0;
   left:0;
   background:rgba(156, 185, 192, 0.9);
@@ -31,6 +31,17 @@ main {
 .warning {
   font-size: 30px;
   color: red
+}
+
+.modalClose {
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.modalOpen{
+  font-size: 25px;
+  text-decoration: none;
+  color:blue;
 }
 
 .s_01 .accordion_one {
@@ -195,10 +206,34 @@ main {
   .title{
     font-size: 28px;
   }
+  .warning {
+    font-size:20px;
+  }
+  .modalClose { 
+    font-size: 20px;
+
+  }
 }
 
 @media (max-width: 400px) {
   .title{
     font-size: 20px;
   }
+
+  .warning {
+    font-size: 17px;
+  }
+
+  .modalClose {
+    font-size: 12px;
+  }
+
+  .s_01 .accordion_one .accordion_inner p.txt_a_ac {
+    font-size: 12px;
+  }
+
+  .modalOpen {
+    font-size: 20px;
+  }
+
 }
