@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :chats
+  has_many :comments, dependent: :destroy
 
   with_options presence: true do
         validates :name
