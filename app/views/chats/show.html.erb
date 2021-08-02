@@ -4,7 +4,7 @@
       <p class="chat__hedding">
         <%= "サウナ画像"%>
       </p>
-      <%= link_to "#{@chat.user.name}", root_path, class: :chat__user %>
+      <%= link_to "#{@chat.user.name}", user_path(@chat.user), class: :chat__user %>
       <% if user_signed_in? && current_user.id == @chat.user_id%>
         <div class="chat__manage">
           <%= link_to "編集する", edit_chat_path(@chat.id), class: :chat__btn %>
@@ -19,6 +19,12 @@
           <p class="detail__title">施設名</p>
           <p class="detail__message">
             <%= @chat.sauna_name %>
+          </p>
+        </div>
+        <div class="chat__detail">
+          <p class="detail__title">場所</p>
+          <p class="detail__message">
+            <%= @chat.area.name %>
           </p>
         </div>
         <div class="chat__detail">

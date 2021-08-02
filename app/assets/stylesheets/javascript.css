@@ -39,7 +39,7 @@ main {
 }
 
 .modalOpen{
-  font-size: 25px;
+  font-size: 15px;
   text-decoration: none;
   color:blue;
 }
@@ -129,6 +129,7 @@ main {
   margin: 0;
   text-align: center;
   font-weight: bold;
+  color: lightskyblue;
 }
 .content{
   margin-top: 150px;
