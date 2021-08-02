@@ -15,7 +15,7 @@
 
         <div class="field">
           <%= f.label :area_id, "場所" %><br />
-          <%= f.text_field :area_id, class: :form__area_id, id:"chat_area_id" %>
+          <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"item-area"}) %>
         </div>
 
         <div class="field">

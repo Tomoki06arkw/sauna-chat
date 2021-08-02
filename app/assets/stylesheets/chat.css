@@ -157,6 +157,10 @@ footer {
   font-size: 20px;
 }
 
+.select-box {
+  width: 150px;
+}
+
 
 
 @media (max-width: 1024px) {
