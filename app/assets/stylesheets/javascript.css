@@ -23,7 +23,7 @@ main {
 .modal .inner {
   position:absolute;
   z-index:11;
-  top:10%;
+  top:1%;
   left:50%;
   transform:translate(-50%,-50%);
 }
@@ -207,11 +207,15 @@ main {
     font-size: 28px;
   }
   .warning {
-    font-size:20px;
+    font-size:23px;
   }
   .modalClose { 
-    font-size: 20px;
+    font-size: 25px;
 
+  }
+
+  .modal .inner {
+    transform:translate(-50%,-50%);
   }
 }
 
@@ -225,7 +229,7 @@ main {
   }
 
   .modalClose {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .s_01 .accordion_one .accordion_inner p.txt_a_ac {
@@ -236,4 +240,7 @@ main {
     font-size: 20px;
   }
 
+  .modal .inner {
+    transform:translate(-50%,-70%);
+  }
 }
