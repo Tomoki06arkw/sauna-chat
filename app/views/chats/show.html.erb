@@ -16,24 +16,34 @@
       </div>
       <div class="chat__body">
         <div class="chat__detail">
-          <p class="detail__title">施設名</p>
+          <p class="detail__title">(施設名)</p>
           <p class="detail__message">
             <%= @chat.sauna_name %>
           </p>
         </div>
         <div class="chat__detail">
-          <p class="detail__title">場所</p>
+          <p class="detail__title">(値段)</p>
+          <p class="detail__message">
+            <%= "#{@chat.price.name}円" %>
+          </p>
+        </div>
+        <div class="chat__detail">
+          <p class="detail__title">(地域)</p>
           <p class="detail__message">
             <%= @chat.area.name %>
           </p>
         </div>
         <div class="chat__detail">
-          <p class="chat__description">感想</p>
+          <p class="chat__description">(感想)</p>
           <p class="detail__message">
             <%= @chat.description %>
           </p>
         </div>
-      </div>
+      </div> 
+    </div>
+  </div>
+
+</main>
       <div class="chat__comments">
         <% if user_signed_in? %>
           <%= form_with model: [@chat, @comment], local: true do |f| %>
@@ -58,9 +68,6 @@
           </ul>
         </div>
       </div> 
-    </div>
-  </div>
-</main>
 <footer>
   <div class="back_to_btn">
     <%= link_to 'トップページに戻る', root_path, class: :back_btn %>
