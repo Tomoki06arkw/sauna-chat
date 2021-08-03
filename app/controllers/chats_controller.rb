@@ -7,6 +7,8 @@ class ChatsController < ApplicationController
   def index
     @chats = Chat.includes(:user).order("created_at DESC")
     @chats = @chats.where('sauna_name LIKE ?', "%#{params[:search]}%") if params[:search].present?
+    @messages = Message.all
+    @message = Message.new
   end
 
   def new
