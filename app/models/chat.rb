@@ -4,10 +4,11 @@ class Chat < ApplicationRecord
   has_one_attached :image
   extend ActiveHash::Associations::ActiveRecordExtensions
     belongs_to :area
+    belongs_to :price
 
   with_options presence: true do
     validates :area_id,     numericality: { other_than: 1, message: "can't be blank" } 
-    validates :price
+    validates :price_id,    numericality: { other_than: 1, message: "can't be blank" } 
     validates :sauna_name
     validates :description
     validates :image

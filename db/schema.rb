@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2021_08_02_035257) do
 
   create_table "chats", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "area_id", null: false
-    t.integer "price", null: false
+    t.integer "price_id", null: false
     t.string "sauna_name", null: false
     t.text "description", null: false
     t.bigint "user_id"
