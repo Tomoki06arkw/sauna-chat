@@ -1,4 +1,9 @@
 class MessagesController < ApplicationController
+  
+  def new
+    @messages = Message.all.order("created_at DESC")
+    @message = Message.new
+  end
 
   def create
     @message = Message.new(text: params[:message][:text])
@@ -6,4 +11,5 @@ class MessagesController < ApplicationController
       ActionCable.server.broadcast 'message_channel', content: @message
     end
   end
+
 end

@@ -36,17 +36,8 @@
     <%= render partial: "chat", collection: @chats %>
     </div>
   </div>
-    <%= form_with model: @message do |f| %>
-    <%= f.text_field :text %>
-    <%= f.submit '送信' %>
-    <% end %>
-    <div id='messages'>
-    <% @messages.reverse_each do |message| %>
-      <p><%= message.text %></p>
-    <% end %>
-    </div>
 </main>
-
+<%= link_to 'チャットルーム', new_message_path%>
 <div class="container">
 
   <div class="heading">

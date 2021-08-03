@@ -7,8 +7,6 @@ class ChatsController < ApplicationController
   def index
     @chats = Chat.includes(:user).order("created_at DESC")
     @chats = @chats.where('sauna_name LIKE ?', "%#{params[:search]}%") if params[:search].present?
-    @messages = Message.all
-    @message = Message.new
   end
 
   def new
@@ -45,9 +43,6 @@ class ChatsController < ApplicationController
     redirect_to root_path
     end
   end
-
-  
-  
 
   private
   def move_to_index
