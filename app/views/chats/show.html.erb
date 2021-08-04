@@ -36,7 +36,7 @@
         <div class="chat__detail">
           <p class="chat__description">(感想)</p>
           <p class="detail__message">
-            <%= @chat.description %>
+            <%= simple_format(h @chat.description) %>
           </p>
         </div>
       </div> 
