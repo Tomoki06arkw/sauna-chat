@@ -44,7 +44,10 @@
   </div>
 </main>
 <div class="chat-room">
-   <%= link_to 'TheGuestsChatRoom', messages_path%>
+   <%= link_to 'TheGuestsChatRoom', messages_path, class: :guest_chat_room %>
+   <div class="guest_commment">
+    <p>登録なしでコメントしよう。</p>
+   </div>
 </div>
 <div class="container">
 

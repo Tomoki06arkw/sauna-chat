@@ -4,17 +4,21 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-
-<h3>ゲストチャット機能</h3>
-<%= form_with model: @message do |f| %>
-  <%= f.text_field :text %>
-  <%= f.submit '送信' %>
-<% end %>
-<div id='messages'>
-  <% @messages.reverse_each do |message| %>
-    <p><%= message.text %></p>
-  <% end %>
+<div class="wrapper_message">
+    <div class="chat__wrapper">
+      <h3 class="chat_title">ゲストチャット機能</h3>
+      <h4 class="chat_message">自由にコメントを書くことが出来るチャットスペースです。<br>
+      行ってみたいサウナ。<br>
+      今日どのように整ったか。<br>
+      注意事項に反しない範囲で何でも書き込んで下さい。
+      <%= form_with model: @message do |f| %>
+        <%= f.text_field :text %>
+        <%= f.submit '送信' %>
+      <% end %>
+      <div id='messages'>
+        <% @messages.reverse_each do |message| %>
+          <p><%= message.text %></p>
+        <% end %>
+      </div>
+    </div>
 </div>

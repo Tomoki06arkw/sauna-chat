@@ -160,8 +160,15 @@ footer {
 .chat-room {
   text-align: center;
   margin: 50px auto;
+ 
+}
+
+.guest_chat_room {
+  text-decoration: none;
+  color: lightseagreen;
   font-size:30px;
 }
+
 
 
 @media (max-width: 1024px) {
