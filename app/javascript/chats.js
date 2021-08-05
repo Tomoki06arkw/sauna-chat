@@ -45,10 +45,4 @@ $(function(){
   $('h1').fadeIn(10000);
 });
 
-$(function(){
-  $('#top-btn').on('click', function(){
-    $(window).scrollTop(0);  
-  });
-});
-
 
