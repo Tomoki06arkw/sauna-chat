@@ -1,5 +1,5 @@
 .wrapper_message {
-  max-width: 500px;
+  max-width: 1000px;
   margin: 50px auto 0;
   background: #fff;
   box-shadow: 0 0 6px rgba(0,0,0,.2);
@@ -8,4 +8,9 @@
 .chat_title{
   font-size: 30px;
   color: lightskyblue
+}
+
+.chat_comment {
+  text-align: center;
+  font-weight: bold;
 }
