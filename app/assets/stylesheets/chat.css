@@ -167,6 +167,10 @@ footer {
   font-size:30px;
 }
 
+.sized {
+  width: 50%;
+  height: 50%;
+}
 
 @media (max-width: 1024px) {
 .inner {
