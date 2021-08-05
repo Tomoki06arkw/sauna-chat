@@ -139,7 +139,7 @@ main {
   overflow: hidden;
   color: #aa8f7b;
   font-family: 'JosefinE Sans', sans-serif;
-  font-size: 35px;
+  font-size: 55px;
   justify-content: center;
   margin: 50px 0 20px 0;
 }
@@ -198,7 +198,7 @@ main {
 .title-1 {
   display: none;
   text-align: center;
-  font-size: 35px;
+  font-size: 55px;
   color: lightskyblue;
   padding-bottom: 10px;
 }
@@ -212,9 +212,11 @@ main {
   }
   .modalClose { 
     font-size: 25px;
-
   }
 
+  .title-1{
+    font-size: 40px;
+  }
   .modal .inner {
     transform:translate(-50%,-50%);
   }
@@ -222,7 +224,11 @@ main {
 
 @media (max-width: 400px) {
   .title{
-    font-size: 20px;
+    font-size: 25px;
+  }
+
+  .title-1{
+    font-size: 30px;
   }
 
   .warning {
