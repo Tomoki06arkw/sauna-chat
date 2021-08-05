@@ -14,6 +14,5 @@ consumer.subscriptions.create("MessageChannel", {
     const messages = document.getElementById('messages');
     const newMessage = document.getElementById('message_text');
     messages.insertAdjacentHTML('afterbegin', html);
-    newMessage.value='';
   }
 });
