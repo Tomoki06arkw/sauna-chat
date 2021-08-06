@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   get 'messages/new'
   devise_for :users
-  root to: "chats#index"
+  devise_scope :user do
+    post '/users/guest_sign_in', to: 'users/sessions#new_guest'
+  end
+  root "chats#index"
   resources :chats do
     resources :comments, only: :create
   end
