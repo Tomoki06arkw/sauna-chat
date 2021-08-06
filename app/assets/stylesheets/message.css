@@ -1,6 +1,6 @@
 .wrapper_message {
   max-width: 1000px;
-  margin: 50px auto 0;
+  margin: 150px auto 0;
   background: #fff;
 }
 
@@ -24,4 +24,17 @@
 .chat_comment {
   text-align: center;
   font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  .chat_message {
+    font-size: 10px;
+  }
+  .chat_title {
+    font-size: 20px;
+  }
+
+  .chat_message {
+    font-size: 15px;
+  }
 }
