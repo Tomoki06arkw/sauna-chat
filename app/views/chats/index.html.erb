@@ -22,7 +22,6 @@
     <%= image_tag 'test4.jpg' %>
   </div>
   <div class="inner">
-  <%= link_to "ゲストログイン", users_guest_sign_in_path, class: "sign-up", method: :post %>
     <div class="page-heading">OsakaSaunaNewInfo</div>
     <%= form_with(url: chats_path, local: true, method: :get, class: "search-form") do |form| %>
     <%= form.text_field :search, placeholder: "サウナ名を検索する", class: "search-input" %>

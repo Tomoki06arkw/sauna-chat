@@ -2,14 +2,25 @@
   max-width: 1000px;
   margin: 50px auto 0;
   background: #fff;
-  box-shadow: 0 0 6px rgba(0,0,0,.2);
 }
 
 .chat_title{
   font-size: 30px;
-  color: lightskyblue
+  color: lightskyblue;
+  text-align:center;
 }
 
+.chat_message {
+  font-weight: bold;
+}
+
+
+.chat_wrapper {
+  box-shadow: 0 0 6px rgba(0,0,0,.2);
+  max-width: 1000px;
+  margin: 50px auto 0;
+  background: #fff;
+}
 .chat_comment {
   text-align: center;
   font-weight: bold;
