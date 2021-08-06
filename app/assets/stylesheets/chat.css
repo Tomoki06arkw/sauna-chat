@@ -33,14 +33,16 @@
 .header-menu-right li {
   float: left;
   padding-top: 15px;
-  font-size: 20px;
+  font-size: 25px;
   padding: 10 10px;
+  
 }
 
 .header-menu-right a {
   color: #323A45;
   font-weight: 700;
   padding: 0 10px;
+  text-decoration: none;
 }
 
 .header-menu-right a:hover {
@@ -189,7 +191,7 @@ footer {
 }
 }
 
-@media (max-width:800px) {
+@media (max-width:870px) {
   
   .header-logo {
     color: #777;
