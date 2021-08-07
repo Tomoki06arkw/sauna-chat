@@ -3,10 +3,10 @@
       <span>サ</span>
       <span>ウ</span>
       <span>ナ</span>
-      <span>と</span>
-      <span>と</span>
-      <span>の</span>
       <span>い</span>
+      <span>こ</span>
+      <span>う</span>
+      <span>よ</span>
       <span>。</span>
     </div> 
   <h1 class="title-1">Good Löyly</h1>
@@ -23,12 +23,13 @@
   </div>
   <div class="inner">
     <div class="page-heading">OsakaSaunaNewInfo</div>
+    <button><a href="#modal01" class="modalOpen">注意事項</a></button>
     <%= form_with(url: chats_path, local: true, method: :get, class: "search-form") do |form| %>
     <%= form.text_field :search, placeholder: "サウナ名を検索する", class: "search-input" %>
     <%= form.submit "検索", class: "search-btn" %>
     <% end %>
-    <button><a href="#modal01" class="modalOpen">注意事項</a></button>
-    <h3 class="sub-heading">サウナに行った記録や口コミを残してみよう。</h3>
+    
+    <h3 class="sub-heading">サウナに行った記録や口コミを残してみよう。<br></h3>
       <div class="modal" id="modal01">
         <div class="overLay modalClose"></div>
         <div class="inner">

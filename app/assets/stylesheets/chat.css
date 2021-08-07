@@ -52,7 +52,7 @@
 
 .main {
   max-width: 1000px;
-  margin: 150px auto 0;
+  margin: 100px auto 0;
   background: #fff;
   box-shadow: 0 0 6px rgba(0,0,0,.2);
 }
@@ -61,11 +61,14 @@
 .page-heading {
   font-weight: bold;
   color:lightskyblue;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .sub-heading {
-  margin-bottom: 5px;
+  margin-bottom: 50px;
+  font-size:20px;
+  color: burlywood;
+  font-weight: bold;
 }
 
 .field {
@@ -171,12 +174,16 @@ footer {
   font-size:30px;
 }
 
+.search-input {
+  margin: 40px auto;
+}
+
 
 
 @media (max-width: 1024px) {
 .inner {
   width: 100%;
-  margin: 150 auto 0;
+  margin: 10px auto 30px;
 }
 
 .card {
@@ -206,7 +213,7 @@ footer {
   
   .inner {
     width: 100%;
-    margin: 150px auto 0;
+    margin: 10px auto 20px;
     text-align:center
   }
 
@@ -232,7 +239,7 @@ footer {
 @media (max-width: 650px) {
   .inner {
     text-align: center;
-    margin: 150px auto 0;
+    margin: 10px auto 20px;
   }
 
   .header-title {
@@ -250,7 +257,7 @@ footer {
   .inner {
     width: 100%;
     text-align: center;
-    margin: 150px auto 0;
+    margin: 10px auto 20px;
   }
 
   .header-title {
