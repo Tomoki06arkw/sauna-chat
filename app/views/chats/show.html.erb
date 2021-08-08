@@ -42,16 +42,15 @@
       </div> 
     </div>
   </div>
-
-</main>
+  
       <div class="chat__comments">
         <% if user_signed_in? %>
           <%= form_with model: [@chat, @comment], local: true do |f| %>
-            <div class="field">
+            <div class="fields">
                <%= f.label :text, "コメント" %><br />
                <%= f.text_field :text, id:"comment_text" %>
             </div>
-            <div class="actions">
+            <div class="chat_action">
               <%= f.submit "送信する", class: :form__btn %>
             </div>
           <% end %> 
@@ -68,6 +67,9 @@
           </ul>
         </div>
       </div> 
+   
+</main>
+    
 <footer>
   <div class="back_to_btn">
     <%= link_to 'トップページに戻る', root_path, class: :back_btn %>

@@ -178,6 +178,32 @@ footer {
   margin: 40px auto;
 }
 
+.chat__comments{
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin: 28px 0 40px 0;
+  text-align: center;
+}
+
+.comments_lists{
+  padding-left: 20px;
+}
+
+.comments_list{
+  list-style-type: square;
+  padding-bottom: 5px;
+  list-style: none;
+}
+
+.comment_user{
+  font-size: 16px;
+  color: #999;
+  text-decoration: underline;
+}
+
+.chat_action {
+  margin: 20px 50px;
+}
 
 
 @media (max-width: 1024px) {
@@ -288,4 +314,9 @@ footer {
   .card__summary {
     font-size: 14px;
   }
+
+  .chat__comments{
+    text-align: left;
+  }
+  
 }
