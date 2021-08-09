@@ -57,11 +57,21 @@
   box-shadow: 0 0 6px rgba(0,0,0,.2);
 }
 
+.SAUNA-INFO {
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+.SAUNA-INFO h2{
+  font-size: 30px;
+  font-weight: bold;
+}
 
 .page-heading {
   font-weight: bold;
   color:lightskyblue;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .sub-heading {
@@ -172,6 +182,10 @@ footer {
   text-decoration: none;
   color: lightseagreen;
   font-size:30px;
+}
+
+.guest_comment p{
+  font-size: 25px;
 }
 
 .search-input {
@@ -299,7 +313,7 @@ footer {
   }
   .header-menu-right li {
     padding-bottom: 10px;
-    font-size: 15px;
+    font-size: 13px;
   }
   .page-heading {
     font-size: 25px;

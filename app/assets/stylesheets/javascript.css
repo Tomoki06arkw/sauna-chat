@@ -139,16 +139,16 @@
   overflow: hidden;
   color: blue;
   font-family: 'JosefinE Sans', sans-serif;
-  font-size: 45px;
+  font-size: 30px;
   justify-content: center;
   margin: 50px 0 20px 0;
+  font-weight: bold;
 }
 
 .title span {
   display: block;
   transform: translate(0, 105%);
   transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  
 }
 
 .title.-visible span {
