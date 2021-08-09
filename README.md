@@ -77,12 +77,12 @@ Slackをイメージし実装を行いました。改善の余地はあります
 アクティブハッシュ
 ・新規投稿する際に価格、場所を選択式にした。
 
-## トップページとJSの詳細動画,画像
-トップページ ![demo](https://gyazo.com/91e4844cddfbe0e2fe88b3fe2e0ddcd2/raw)
+## トップページのJSの詳細動画
+トップページ1 ![demo](https://gyazo.com/d5d6941c50d8ddc8dbbc2b12162416c1/raw)
 
-ログイン画面![2021-07-20 14 52のイメージ](https://user-images.githubusercontent.com/84255600/126270310-45b1f66e-ceb1-4290-9090-2c4f94c4bd8c.jpg)
+トップページ2 ![demo](https://gyazo.com/f4f556a722627dc84006213eb816e203/raw)
 
-ライティングページ ![2021-07-20 14 22のイメージ](https://user-images.githubusercontent.com/84255600/126266200-845971b8-d445-41ad-aebd-a39b9fe085f5.jpg)
+トップページ3 ![demo](ttps://gyazo.com/ded64c79830d1c6047cc46bf18525a5f/raw)
 
 
 # データベース設計	
