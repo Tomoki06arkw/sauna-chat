@@ -137,8 +137,7 @@
 .title {
   display: flex;
   overflow: hidden;
-  color: blue;
-  font-family: 'JosefinE Sans', sans-serif;
+  color: lightskyblue;
   font-size: 40px;
   justify-content: center;
   margin: 50px 0 20px 0;

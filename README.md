@@ -83,9 +83,9 @@ Slackをイメージし実装を行いました。改善の余地はあります
 ## トップページのJSの詳細動画
 トップページ1 ![demo](https://gyazo.com/d5d6941c50d8ddc8dbbc2b12162416c1/raw)
 
-トップページ2 ![demo](https://gyazo.com/f4f556a722627dc84006213eb816e203/raw)
+トップページ2 ![demo](https://gyazo.com/9c683fc8ac4e174612cee99755d0f2c2/raw)
 
-トップページ3 ![demo](ttps://gyazo.com/ded64c79830d1c6047cc46bf18525a5f/raw)
+トップページ3 ![demo](https://gyazo.com/ded64c79830d1c6047cc46bf18525a5f/raw)
 
 
 # データベース設計	
