@@ -84,7 +84,7 @@ Slackをイメージし実装を行いました。改善の余地はあります
 
 トップページ2 ![demo](https://gyazo.com/0747b56898c9e8eaace6d4736039226d/raw)
 
-トップページ3 ![demo](https://gyazo.com/de0b5628b73137fc59b681afaad0b2c7/raw)
+トップページ3 ![demo](https://gyazo.com/35c8a68a5218d7159ae171d9e2c97f5f/raw)
 
 
 # データベース設計	
