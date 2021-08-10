@@ -248,6 +248,11 @@ footer {
 }
 
 @media (max-width:950px) {
+
+  .main {
+    max-width: 850px;
+    
+  }
   
   .header-logo {
     color: #777;

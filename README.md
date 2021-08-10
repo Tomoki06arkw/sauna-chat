@@ -83,9 +83,9 @@ Slackをイメージし実装を行いました。改善の余地はあります
 ・新規投稿する際に価格、場所を選択式にした。
 
 ## トップページのJSの詳細動画
-トップページ1 ![demo](https://gyazo.com/d5d6941c50d8ddc8dbbc2b12162416c1/raw)
+トップページ1 ![demo](https://gyazo.com/8991e90c05fe009eaeefda9a8ebf016d/raw)
 
-トップページ2 ![demo](https://gyazo.com/0747b56898c9e8eaace6d4736039226d/raw)
+トップページ2 ![demo](https://gyazo.com/f2c2f99f21f27266e961a1989a718ce2/raw)
 
 トップページ3 ![demo](https://gyazo.com/35c8a68a5218d7159ae171d9e2c97f5f/raw)
 
