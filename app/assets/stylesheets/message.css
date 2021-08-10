@@ -18,6 +18,7 @@
 .chat_wrapper {
   box-shadow: 0 0 6px rgba(0,0,0,.2);
   max-width: 1000px;
+  height: 60vh;
   margin: 50px auto 0;
   background: #fff;
 }
