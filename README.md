@@ -85,7 +85,7 @@ Slackをイメージし実装を行いました。改善の余地はあります
 ## トップページのJSの詳細動画
 トップページ1 ![demo](https://gyazo.com/8991e90c05fe009eaeefda9a8ebf016d/raw)
 
-トップページ2 ![demo](https://gyazo.com/8991e90c05fe009eaeefda9a8ebf016d/raw)
+トップページ2 ![demo](https://gyazo.com/787f2a01f5d2c211e8c67f88637872dd/raw)
 
 トップページ3 ![demo](https://gyazo.com/35c8a68a5218d7159ae171d9e2c97f5f/raw)
 
