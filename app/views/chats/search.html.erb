@@ -1,23 +1,8 @@
-<div class="content">
-      <div class="title">
-        <span>サ</span>
-        <span>ウ</span>
-        <span>ナ</span>
-        <span>と</span>
-        <span>と</span>
-        <span>の</span>
-        <span>い</span>
-        <span>。</span>
-      </div> 
-    <h1 class="title-1">Good Löyly</h1>
-    <h1 class="title-1">Good Sauna</h1>
-    <h1 class="title-1">Build a Good Life</h1>
-  </div> 
-  <main class="main">
+<main class="main">
     <div class="inner">
       <div class="page-heading">OsakaSaunaNewInfo</div>
       <%= form_with(url: chats_path, local: true, method: :get, class: "search-form") do |form| %>
-      <%= form.text_field :search, placeholder: "サウナ名を検索する", class: "search-input" %>
+      <%= form.text_field :keyword, placeholder: "サウナ名を検索する", class: "search-input" %>
       <%= form.submit "検索", class: "search-btn" %>
        <% end %>
       <button><a href="#modal01" class="modalOpen">注意事項</a></button>
@@ -35,51 +20,7 @@
       <%= render partial: "chat", collection: @chats %>
       </div>
     </div>
-  </main>
-
-  
-
-  <div class="container">
-    <div class="heading">
-      <h2>FAQ</h2>
-    </div>
-        <div class="section s_01">
-        <div class="accordion_one">
-          <div class="accordion_header">ととのうってなに？？<div class="i_box"><i class="one_i"></i></div></div>
-          <div class="accordion_inner">
-            <div class="box_one">
-              <p class="txt_a_ac">温かいサウナと冷たい水風呂へ交互に入ることで交感神経が刺激され、<br>血流が良くなることで陶酔感を得やすくなる。</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion_one">
-          <div class="accordion_header">TTNTってなに？<div class="i_box"><i class="one_i"></i></div></div>
-          <div class="accordion_inner">
-            <div class="box_one">
-              <p class="txt_a_ac">ととのったーって意味です。私が作りました。<br>新しい言葉はこんなところからできます。</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion_one">
-          <div class="accordion_header">サウナってメタボゾンビの集まりだよね.何がいいの？<div class="i_box"><i class="one_i"></i></div></div>
-          <div class="accordion_inner">
-            <div class="box_one">
-              <p class="txt_a_ac">サウナに入ると副交感神経に働きかけリラックス効果を促進し、<br>その日のイライラを解消してくれます。心身がスッキリします。</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion_one">
-          <div class="accordion_header">子供は入っていいの？？<div class="i_box"><i class="one_i"></i></div></div>
-          <div class="accordion_inner">
-            <div class="box_one">
-              <p class="txt_a_ac">５歳以下の子供は入っては危険です。<br>貧血を起こしてしまう可能性があるからです。</p>
-            </div>
-          </div>
-        </div>
-  </div>
+</main>
 <footer>
     <a href="#" class="btn btn-secondary"></a></a>
     <ul class="footer-nav">

@@ -25,8 +25,8 @@
   <div class="inner">
     <div class="page-heading">OsakaSaunaNewInfo</div>
     <button><a href="#modal01" class="modalOpen">注意事項</a></button>
-    <%= form_with(url: chats_path, local: true, method: :get, class: "search-form") do |form| %>
-    <%= form.text_field :search, placeholder: "サウナ名を検索する", class: "search-input" %>
+    <%= form_with(url: search_chats_path, local: true, method: :get, class: "search-form") do |form| %>
+    <%= form.text_field :keyword, placeholder: "サウナ名を検索する", class: "search-input" %>
     <%= form.submit "検索", class: "search-btn" %>
     <% end %>
     <h3 class="sub-heading">サウナに行った記録や口コミを残してみよう。<br></h3>

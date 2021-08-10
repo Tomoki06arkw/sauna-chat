@@ -1,12 +1,11 @@
 class ChatsController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index, :show, :search]
   before_action :move_to_index, except: [:index, :show, :search]
   before_action :set_chat, only: [:show, :edit, :update, :destroy]
 
 
   def index
     @chats = Chat.includes(:user).order("created_at DESC")
-    @chats = @chats.where('sauna_name LIKE ?', "%#{params[:search]}%") if params[:search].present?
   end
 
   def new
@@ -36,6 +35,10 @@ class ChatsController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def search
+    @chats = Chat.search(params[:keyword])
   end
 
   def destroy

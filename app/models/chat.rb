@@ -17,5 +17,12 @@ class Chat < ApplicationRecord
   def was_attached?
     self.image.attached?
   end
+  def self.search(search)
+    if search != ""
+      Chat.where('sauna_name LIKE(?)', "%#{search}%")
+    else
+      Chat.all
+    end
+  end
 
 end
