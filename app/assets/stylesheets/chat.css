@@ -286,6 +286,10 @@ footer {
   
 
 @media (max-width: 680px) {
+  .main {
+    max-width: 500px;
+    
+  }
   .inner {
     text-align: center;
     margin: 10px auto 20px;
@@ -307,6 +311,11 @@ footer {
 }
 
 @media (max-width: 400px) {
+
+  .main {
+    max-width: 320px;
+    
+  }
 
   .inner {
     width: 100%;
