@@ -121,6 +121,7 @@
   display: none;
   padding: 10px 10px;
   box-sizing: border-box;
+  margin-bottom: 50px;
 }
 .s_01 .accordion_one .accordion_inner .box_one {
   height: 40px;

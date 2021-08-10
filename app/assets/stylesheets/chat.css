@@ -13,14 +13,13 @@
 
 .header-title {
   float: left;
-  font-size: 30px;
   padding: 0px 30px;
 }
 
 .header-logo {
   color: #777;
   font-weight: 700;
-  font-size: 39px;
+  font-size: 49px;
   cursor: pointer;
   text-decoration: none;
 }
@@ -33,7 +32,7 @@
 .header-menu-right li {
   float: left;
   padding-top: 15px;
-  font-size: 25px;
+  font-size: 30px;
   padding: 0 3px;
   
 }
@@ -232,6 +231,10 @@ footer {
   margin: 10px auto 30px;
 }
 
+.header-menu-right li {
+  font-size: 25px;
+}
+
 .card {
   width: 48%;
   margin-bottom: 40px;
@@ -244,17 +247,17 @@ footer {
 }
 }
 
-@media (max-width:870px) {
+@media (max-width:950px) {
   
   .header-logo {
     color: #777;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Dosis', sans-serif;
     cursor: pointer;
   }
   .header-menu-right li {
-    font-size: 18px;
+    font-size: 20px;
   }
   
   .inner {
@@ -293,7 +296,7 @@ footer {
   }
 
   .header-menu-right li {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .s_01 .accordion_one .accordion_header {
