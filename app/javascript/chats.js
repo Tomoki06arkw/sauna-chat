@@ -1,5 +1,4 @@
-$(function(){
-    
+$(function(){   
   $(".modalOpen").on('click', function(){
       var navClass = $(this).attr("class"),
           href = $(this).attr("href");
