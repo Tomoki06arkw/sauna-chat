@@ -37,8 +37,15 @@
         <a href="" class="modalClose">閉じる</a>
         </div>
       </div>
-    <div class="card__wrapper">
-    <%= render partial: "chat", collection: @chats %>
+    <div class="content-wrap animated">
+      <div class="content-txt">
+        <div class="card__wrapper">
+          <%= render partial: "chat", collection: @chats %>
+        </div>
+      </div>
+      <div class="more-btn">
+        <p class="open">もっと見る</p>
+      </div>
     </div>
   </div>
 </main>
