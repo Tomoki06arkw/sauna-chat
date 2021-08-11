@@ -269,9 +269,6 @@
   background: #aaa;
 }
 
-
-
-
 @media (max-width: 700px) {
   .title{
     font-size: 28px;
