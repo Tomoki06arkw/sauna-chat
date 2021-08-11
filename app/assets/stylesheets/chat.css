@@ -133,11 +133,18 @@ footer {
 }
 
 .footer-nav li {
-  padding: 15px;
+  padding: 15px 0 0 25px;
 }
-.footer-nav a {
+
+.footer-nav {
   color: #d5d7e4;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+.footer-content {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .heading {
@@ -305,17 +312,22 @@ footer {
   }
 
   .header-logo {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .header-menu-right li {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .s_01 .accordion_one .accordion_header {
     font-size: 16px;
     text-align: left;
     padding: 15px 60px 15px 15px;
+  }
+
+  .footer-nav {
+    color: #d5d7e4;
+    font-size: 20px;
   }
 }
 
@@ -337,11 +349,11 @@ footer {
   }
 
   .header-logo {
-    font-size: 30px;
+    font-size: 35px;
   }
   .header-menu-right li {
     padding-bottom: 10px;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .header-menu-right a {
@@ -365,4 +377,16 @@ footer {
     text-align: left;
   }
   
+  .footer-nav {
+    color: #d5d7e4;
+    font-size: 13px;
+  }
+
+  .footer-content {
+    font-size: 10px;
+  }
+
+  .footer-nav li {
+    padding: 15px 0 0 15px;
+  }
 }
