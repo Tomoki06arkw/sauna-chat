@@ -1,7 +1,7 @@
 <div class="card">
-  <%= link_to image_tag(chat.image, class: :card__img), chat_path(chat.id), method: :get if chat.image.attached? %>
+  <%= link_to "サウナ名  #{chat.sauna_name}", chat_path(chat.id), method: :get, class: :chat__sauna_name %>
   <div class="card__body">
-    <%= link_to "サウナ名  #{chat.sauna_name}", chat_path(chat.id), method: :get, class: :chat__sauna_name %>
+    <%= link_to image_tag(chat.image, class: :card__img), chat_path(chat.id), method: :get if chat.image.attached? %>
      <p class="card__summary">
        <%= "感想" %><br>
        <%= simple_format(h chat.description.truncate(100)) %>
