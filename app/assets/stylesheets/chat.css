@@ -246,11 +246,14 @@ footer {
 .detail__title {
   font-size: 25px;
   color: lightblue;
+  text-decoration: none;
 }
 
 .detail__message {
   font-size: 20px;
 }
+
+
 
 
 
