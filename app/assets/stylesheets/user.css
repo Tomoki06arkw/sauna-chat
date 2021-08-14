@@ -37,6 +37,14 @@
 
 }
 
+
+@media (max-width: 640px) {
+  .table {
+    width: 80%;
+  }
+
+
+}
 @media (max-width: 400px) {
 
   .table{
