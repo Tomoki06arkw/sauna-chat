@@ -219,7 +219,7 @@
 .close-btn, .more-btn {
   display: block;
   width: 100%;
-  padding: 80px 0 0;
+  padding: 120px 0 0;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -326,10 +326,5 @@
     
   }
 
-  .content-wrap {
-    height: 220px;
-  }
-  .slide-up {
-    height: 220px;
-  }
+
 }
