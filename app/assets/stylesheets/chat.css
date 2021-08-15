@@ -109,8 +109,6 @@ margin-bottom: 40px;
   height: 33vh;
 }
 
-
-
 .btn {
   text-align: center;
   width: 100%;
@@ -189,7 +187,7 @@ footer {
 .guest_chat_room {
   text-decoration: none;
   color: lightseagreen;
-  font-size:40px;
+  font-size:30px;
 }
 
 .guest_comment p{
@@ -417,4 +415,13 @@ footer {
   .footer-nav li {
     padding: 15px 0 0 15px;
   }
+
+  .guest_chat_room {
+    font-size:25px;
+  }
+
+  .guest_comment p{
+    font-size: 20px;
+  }
+  
 }

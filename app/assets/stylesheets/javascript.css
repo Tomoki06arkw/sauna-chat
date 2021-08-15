@@ -244,7 +244,7 @@
   background: none;
 }
 .slide-up {
-  height: 320px;
+  height: 280px;
   padding-bottom: 0;
   overflow: hidden;
 }
@@ -259,7 +259,7 @@
   cursor: pointer;
   background: #29B6F6;
   padding: 5px 20px;
-  width: 30%;
+  width: 50%;
   border-radius: 20px;
 }
 .close-btn {
