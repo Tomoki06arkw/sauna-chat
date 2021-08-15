@@ -325,4 +325,11 @@
     height:35vh;
     
   }
+
+  .content-wrap {
+    height: 220px;
+  }
+  .slide-up {
+    height: 220px;
+  }
 }

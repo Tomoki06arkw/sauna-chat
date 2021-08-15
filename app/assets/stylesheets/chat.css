@@ -425,3 +425,16 @@ footer {
   }
   
 }
+
+@media (max-width: 350px) {
+  .main {
+    max-width: 280px; 
+  }
+
+  .header-logo {
+    font-size: 30px;
+  }
+  .header-menu-right li {
+    font-size: 13px;
+  }
+}
