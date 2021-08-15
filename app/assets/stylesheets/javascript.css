@@ -203,10 +203,14 @@
   padding-bottom: 10px;
 }
 
-
-.open1 {
-  display: none;
+.open {
+  display:none;
 }
+
+.close {
+  display:none;
+}
+
 
 @media (max-width: 800px) {
   .title{
@@ -289,7 +293,7 @@
   }
   .close-btn p {
     background: #aaa;
-
+  
   }
 }
 
