@@ -51,11 +51,11 @@ $(function(){
 
 $(function() {
   $('.more-btn').on('click', function() {
-    if( $(this).children().is('.open') ) {
-      $(this).html('<p class="close">閉じる</p>').addClass('close-btn');
+    if( $(this).children().is('.open1') ) {
+      $(this).html('<p class="close1">閉じる</p>').addClass('close-btn');
       $(this).parent().removeClass('slide-up').addClass('slide-down');
     } else {
-      $(this).html('<p class="open">もっと見る</p>').removeClass('close-btn');
+      $(this).html('<p class="open1">もっと見る</p>').removeClass('close-btn');
       $(this).parent().removeClass('slide-down').addClass('slide-up');
     }
   });
