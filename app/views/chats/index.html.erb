@@ -40,6 +40,7 @@
         <div class="card__wrapper">
           <%= render partial: "chat", collection: @chats %>
         </div>
+          <%= paginate @chats %>
   </div>
 </main>
 <div class="chat-room">
