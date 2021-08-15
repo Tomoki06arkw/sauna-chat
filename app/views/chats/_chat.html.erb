@@ -5,6 +5,8 @@
         <%= link_to image_tag(chat.image, class: :card__img), chat_path(chat.id), method: :get if chat.image.attached? %>
         <div class="content-txt">
           <p class="card__summary">
+            <%= "値段"  %><br>
+            <%= "#{chat.price.name}円" %><br>
             <%= "感想"  %><br>
             <%= simple_format(h chat.description.truncate(100)) %>
           </p>

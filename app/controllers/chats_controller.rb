@@ -6,6 +6,7 @@ class ChatsController < ApplicationController
 
   def index
     @chats = Chat.includes(:user).order("created_at DESC")
+
   end
 
   def new

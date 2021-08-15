@@ -4,7 +4,7 @@ class Price < ActiveHash::Base
     {id: 4, name: '1000~2000'}, {id: 5, name: '2000~3000'}, {id: 6, name: '3000~~'}
   ]
   
-    include ActiveHash::Associations
+  include ActiveHash::Associations
   has_many :chats
   
 end
