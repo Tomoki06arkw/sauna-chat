@@ -84,14 +84,13 @@ AWSのS3
 ・新規投稿する際に価格、場所を選択式にした。
 
 ## トップページのJSの詳細動画
-トップページ1 ![demo](https://gyazo.com/8991e90c05fe009eaeefda9a8ebf016d/raw)
+トップページ1 ![demo](https://gyazo.com/8991e90c05fe009eaeefda9a8ebf016d/raw)  
 
-トップページ2 !![demo](https://gyazo.com/28116527c50f701a98e9d29ba8403739/raw)
+トップページ2 !![demo](https://gyazo.com/28116527c50f701a98e9d29ba8403739/raw)  
 
-トップページ3 ![demo](https://gyazo.com/91cf4bdd454dfe748a181e058a8dc878/raw)
+トップページ3 ![demo](https://gyazo.com/697031fb5ae9f2805984b84fbdcd55cf/raw)  
 
-トップページ4 ![demo](https://gyazo.com/35c8a68a5218d7159ae171d9e2c97f5f/raw)
-
+トップページ4 ![demo](https://gyazo.com/7035ca9464ddf538a44eebd00668bb81/raw)  
 
 # データベース設計	
 
