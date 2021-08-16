@@ -1,5 +1,6 @@
 <div class="card">
-  <%= link_to "サウナ名  #{chat.sauna_name}", chat_path(chat.id), method: :get, class: :detail__title%>
+  <%= link_to " #{chat.sauna_name}", chat_path(chat.id), method: :get, class: :detail__title%>
+  <%= "(#{chat.area.name})"%>
   <div class="card__body">
       <div class="content-wrap animated">
         <%= link_to image_tag(chat.image, class: :card__img), chat_path(chat.id), method: :get if chat.image.attached? %>
