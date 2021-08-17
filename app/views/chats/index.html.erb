@@ -24,26 +24,26 @@
       <%= image_tag 'sauna6.jpg' %>
     </div>
   <div class="inner">
-      <button><a href="#modal01" class="modalOpen">注意事項</a></button>
-    <h3 class="sub-heading">サウナに行った記録<br>口コミを残してみよう。<br></h3>
-      <%= form_with(url: search_chats_path, local: true, method: :get, class: "search-form") do |form| %>
-      <%= form.text_field :keyword, placeholder: "サウナ名を検索する", class: "search-input" %>
-      <%= form.submit "検索", class: "search-btn" %>
-      <% end %>
-      <div class="modal" id="modal01">
-        <div class="overLay modalClose"></div>
-        <div class="inner">
-        <p class="warning">1, サウナと関係のない記述は禁止。<br>
-                            2, 誹謗中傷の書き込み禁止<br>
-                            3, 上記を守ることができない場合は強制退会</p>
-        <a href="" class="modalClose">閉じる</a>
+        <%= form_with(url: search_chats_path, local: true, method: :get, class: "search-form") do |form| %>
+        <%= form.text_field :keyword, placeholder: "サウナ名を検索する", class: "search-input" %>
+        <%= form.submit "検索", class: "search-btn" %>
+        <% end %>
+        <button><a href="#modal01" class="modalOpen">注意事項</a></button>
+        <h3 class="sub-heading">サウナに行った記録<br>口コミを残してみよう。<br></h3>
+        <div class="modal" id="modal01">
+          <div class="overLay modalClose"></div>
+          <div class="inner">
+          <p class="warning">1, サウナと関係のない記述は禁止。<br>
+                              2, 誹謗中傷の書き込み禁止<br>
+                              3, 上記を守ることができない場合は強制退会</p>
+          <a href="" class="modalClose">閉じる</a>
+          </div>
         </div>
-      </div>
         <div class="card__wrapper">
-          <%= render partial: "chat", collection: @chats %>
+            <%= render partial: "chat", collection: @chats %>
         </div>
         <div class="chat-btn">
-            <%= paginate @chats %>
+              <%= paginate @chats %>
         </div>
   </div>
 </main>
