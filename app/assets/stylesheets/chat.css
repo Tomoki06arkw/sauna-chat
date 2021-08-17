@@ -105,13 +105,13 @@ align-items: center;
 }
 
 .card {
-width: calc((100% - 50px) / 3);
+width: calc((100% - 50px) / 2);
 margin-bottom: 40px;
 }
 
 .card__img {
-  width: 33vh;
-  height: 33vh;
+  width: 40vh;
+  height: 40vh;
 }
 
 .btn {

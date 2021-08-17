@@ -5,7 +5,7 @@ class ChatsController < ApplicationController
 
 
   def index
-    @chats = Kaminari.paginate_array(Chat.includes(:user).reverse_order).page(params[:page]).per(6)
+    @chats = Kaminari.paginate_array(Chat.includes(:user).reverse_order).page(params[:page]).per(4)
 
   end
 
