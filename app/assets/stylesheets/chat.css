@@ -79,8 +79,8 @@
 }
 
 .sub-heading {
-  margin-bottom: 50px;
-  font-size:20px;
+  margin: 20px 0 50px;
+  font-size: 25px;
   color: burlywood;
   font-weight: bold;
 }
@@ -413,12 +413,14 @@ margin-top: 50px;
   .guest_comment p{
     font-size: 20px;
   }
-  
-}
 
+  .sub-heading {
+    font-size: 20px;
+  }
+}
 @media (max-width: 350px) {
   .main {
-    max-width: 280px; 
+    max-width: 300px; 
   }
 
   .header-logo {
