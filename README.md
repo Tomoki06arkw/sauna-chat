@@ -87,7 +87,7 @@ AWSのS3
 ・新規投稿する際に価格、場所を選択式にした。
 
 ## トップページのJSの詳細動画
-トップページ1 ![demo](https://gyazo.com/8991e90c05fe009eaeefda9a8ebf016d/raw)  
+トップページ1 ![demo](https://gyazo.com/785c359602c4a66938cd598103bbd799/raw)  
 
 トップページ2 !![demo](https://gyazo.com/28116527c50f701a98e9d29ba8403739/raw)  
 
