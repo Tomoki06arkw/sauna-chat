@@ -24,8 +24,9 @@
         <%= "#{@user.name}さんの投稿一覧"%>
       </h2>
       <div class="card__wrapper">
-          <%= render partial: "chats/chat", collection: @user.chats %>
+          <%= render partial: "chats/chat", collection: @chats %>
       </div>
+      <%= paginate @chats %>
     </div>
   </div>
 </div>

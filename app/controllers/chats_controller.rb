@@ -39,7 +39,7 @@ class ChatsController < ApplicationController
   end
 
   def search
-    @chats = Chat.search(params[:keyword])
+    @chats = Chat.search(params[:keyword]).order("created_at DESC")
   end
 
   def destroy
