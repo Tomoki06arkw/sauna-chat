@@ -213,7 +213,7 @@
 }
 
 .content-wrap {
-  height: 220px;
+  height: 275px;
   overflow: hidden;
   position: relative;
   margin: 0;
@@ -246,7 +246,7 @@
   background: none;
 }
 .slide-up {
-  height: 220px;
+  height: 275px;
   padding-bottom: 0;
   overflow: hidden;
 }
