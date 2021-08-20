@@ -4,8 +4,14 @@
       <h2 class="page-heading">
         <%= "#{@user.name}さんの情報"%>
       </h2>
+      <%= link_to '編集', edit_user_registration_path%>
       <table class="table">
         <tbody>
+          <% if @user.profile_image? %>
+          <%= image_tag @user.profile_image.url %>
+          <% else %>
+          <%= image_tag("default.png") %>
+          <% end %>
           <tr>
             <th class="table__col1">名前</th>
             <td class="table__col2"><%= @user.nickname %></td>
