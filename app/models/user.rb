@@ -15,6 +15,7 @@ class User < ApplicationRecord
         validates :profile
         validates :experience
   end
+  mount_uploader :profile_image, ImageUploader
 
   def self.guest
     find_or_create_by(email: 'guest@example.com') do |user|
