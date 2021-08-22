@@ -8,7 +8,7 @@
         <%  if !(current_user.email == 'guest@example.com') %>
         <%= link_to '編集', edit_user_registration_path%>
         <% end %>
-      <% end %>
+      <% end%>
       <table class="table">
         <tbody>
           <% if @user.profile_image? %>
