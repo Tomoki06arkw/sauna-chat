@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_many :chats
   has_many :comments, dependent: :destroy
+  has_many :likes, dependent: :destroy
 
   with_options presence: true do
         validates :name
@@ -17,6 +18,11 @@ class User < ApplicationRecord
   end
   mount_uploader :profile_image, ImageUploader
 
+
+  def already_liked?(chat)
+    self.likes.exists?(chat_id:chat.id)
+  end
+
   def self.guest
     find_or_create_by(email: 'guest@example.com') do |user|
       user.password = SecureRandom.urlsafe_base64
@@ -26,5 +32,7 @@ class User < ApplicationRecord
       user.experience = '最近始めました'
     end
   end
+
+  
   
 end

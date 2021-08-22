@@ -8,6 +8,18 @@
       <div class="content-wrap animated">
         <%= link_to image_tag(chat.image, class: :card__img), chat_path(chat.id), method: :get if chat.image.attached? %>
         <div class="content-txt">
+        <% if user_signed_in? %>
+          <% if current_user.already_liked?(chat) %>
+              <%= link_to chat_likes_path(chat), method: :delete do %>
+                <i class="fas fa-heart"></i>
+              <%end%>
+              <% else %>
+              <%= link_to chat_likes_path(chat), method: :post do %>
+                <i class="fas fa-heart"></i>
+              <% end %>
+          <% end %>
+        <% end %>
+        <%= "いいね#{chat.likes.count}"%>
           <p class="card__summary">
             <%= "値段"  %><br>
             <%= "#{chat.price.name}円" %><br>
