@@ -4,6 +4,11 @@
       <h2 class="page-heading">
         <%= "#{@user.name}さんの情報"%>
       </h2>
+      <% if user_signed_in? %>
+        <%  if !(current_user.email == 'guest@example.com') %>
+        <%= link_to '編集', edit_user_registration_path%>
+        <% end %>
+      <% end %>
       <table class="table">
         <tbody>
           <% if @user.profile_image? %>

@@ -93,7 +93,7 @@ AWSのS3
 ## トップページのJSの詳細動画
 トップページ1 ![demo](https://gyazo.com/785c359602c4a66938cd598103bbd799/raw)  
 
-トップページ2 !![demo](https://gyazo.com/28116527c50f701a98e9d29ba8403739/raw)  
+トップページ2 ![demo](https://gyazo.com/28116527c50f701a98e9d29ba8403739/raw)  
 
 トップページ3 ![demo](https://gyazo.com/697031fb5ae9f2805984b84fbdcd55cf/raw)  
 
