@@ -94,8 +94,9 @@ AWSのS3
 アクティブハッシュ
 ・新規投稿する際に価格、場所を選択式にした。
 
-## トップページのJSの詳細動画
-トップページモバイル  ![demo](https://gyazo.com/091fcf96979b194adfcb89b8c8c5f083/raw) 
+## トップページのJSの詳細動画  
+トップページモバイル  
+![demo](https://gyazo.com/091fcf96979b194adfcb89b8c8c5f083/raw) 
   
 トップページ1  ![demo](https://gyazo.com/785c359602c4a66938cd598103bbd799/raw)  
   
