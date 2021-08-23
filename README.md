@@ -30,7 +30,7 @@ PASSWORD : 0616
 新規登録無しで投稿者の情報、投稿内容やチャットにコメントを投稿することが出来ます。  
 チャット機能ば非同期でコメントをすることができます。  
 新規登録またはゲストログインするとサウナ情報を投稿可能です。  
-また、ログインユーザーのみ投稿ページにコメントとGOODボタンを押すことが出来ます。
+また、ログインユーザーのみ投稿ページにコメントといいねボタンを押すことが出来ます。
 
 ## 工夫したポイント
 ・モバイルファーストでの実装  
@@ -110,34 +110,46 @@ AWSのS3
 ## users テーブル
 
 | Column         |  Type   | Options     |
-| ---------------| ------ | ----------- |
-| name           |  string | null: false |
-| email          | string | null: false |
-| password       | string | null: false |
-| nickname       | string | null: false |
-| profile        | text   | null: false |
-| experience     | text   | null: false |
+| ---------------| ------- | ----------- |
+| name           | string  | null: false |
+| email          | string  | null: false |
+| password       | string  | null: false |
+| nickname       | string  | null: false |
+| profile        | text    | null: false |
+| experience_id  | itenger | null: false |
+| profile_image  | string  | ----------- |
 
 ### Association
 
 - has_many :chats
-- has_many :comments
+- has_many :comments, dependent: :destroy
+- has_many :likes,    dependent: : destroy
+- belongs_to :experience
 
 ## chats テーブル
 
-| Column       | Type        | Options     |
-| ------------ | ----------- | ----------- |
-| image        | active      | null: false |
-| area_id      | integer     | null:false  |
-| price        | integer     | null: false |
-| sauna-name   | string      | null:false  |
-| description  | text        | null: false |
-| user         | references  | null:false, foreign_key: true |
+| Column               | Type        | Options     |
+| -------------------- | ----------- | ----------- |
+| image                | active      | null: false |
+| area_id              | integer     | null: false |
+| price_id             | integer     | null: false |
+| sauna-name           | string      | null: false |
+| description          | text        | null: false |
+| user                 | references  | null: false, foreign_key: true |
+| sauna_temperature_id | integer     | null: false |
+| water_bath_id        | integer     | null: false |
+
 
 ### Association
 
 - belongs_to :user
-- has_many :comments
+- has_many :comments, dependent: :destroy
+- has_many :likes,    dependent: :destroy
+- has_one_attached,   :image
+- belongs_to :area
+- belongs_to :price
+- belongs_to :sauna_temperature
+- belongs_to :water_bath
 
 ## comments テーブル
 
@@ -157,3 +169,10 @@ AWSのS3
 | Column       | Type        | Options     |
 | ------------ | ----------- | ----------- |
 | text         | text        | ----------- |
+
+## likes テーブル
+
+| Column       | Type        | Options     |
+| ------------ | ----------- | ----------- |
+| user_id      | integer     | ----------- |
+| chat_id      | integer     | ----------- |
