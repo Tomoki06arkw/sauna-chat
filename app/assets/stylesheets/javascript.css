@@ -213,7 +213,7 @@
 }
 
 .content-wrap {
-  height: 265px;
+  height: 300px;
   overflow: hidden;
   position: relative;
   margin: 0;
@@ -246,7 +246,7 @@
   background: none;
 }
 .slide-up {
-  height: 265px;
+  height: 300px;
   padding-bottom: 0;
   overflow: hidden;
 }
@@ -330,7 +330,11 @@
     height:35vh;
     
   }
-  .more-btn p {
-    
+  .content-wrap {
+    height: 265px;
   }
+  .slide-up {
+    height: 265px;
+  }
+
 }
