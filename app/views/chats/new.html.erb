@@ -19,6 +19,16 @@
         </div>
 
         <div class="field">
+          <%= f.label :sauna_temperature_id, "サウナ温度" %><br />
+          <%= f.collection_select(:sauna_temperature_id, SaunaTemperature.all, :id, :name, {}, {class:"select-box", id:"chat-sauna_temperature"}) %>
+        </div>
+
+        <div class="field">
+          <%= f.label :water_bath_id, "水風呂温度" %><br />
+          <%= f.collection_select(:water_bath_id, WaterBath.all, :id, :name, {}, {class:"select-box", id:"chat-water_bath"}) %>
+        </div>
+
+        <div class="field">
           <%= f.label :description, "感想" %><br />
           <%= f.text_area :description, placeholder:"100文字までお書き下さい",  class: :form__text, id:"chat_description" %>
         </div>

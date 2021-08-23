@@ -36,8 +36,8 @@
         </div>
 
         <div class="field">
-          <%= f.label :experience, "サウナ歴" %><br />
-          <%= f.text_field :experience, class: :form__text, id:"user_experience" %>
+          <%= f.label :experience_id, "サウナ歴" %><br />
+          <%= f.collection_select(:experience_id, Experience.all, :id, :name, {}, {class:"select-box", id:"chat-experience"}) %>
         </div>
 
         <div class="field">

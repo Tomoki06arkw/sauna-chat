@@ -8,14 +8,18 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
 
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :experience
+
   with_options presence: true do
         validates :name
         validates :email
         validates :password
         validates :nickname
         validates :profile
-        validates :experience
+        validates :experience_id, numericality: { other_than: 1, message: "can't be blank"}
   end
+
   mount_uploader :profile_image, ImageUploader
 
 
@@ -29,7 +33,7 @@ class User < ApplicationRecord
       user.name = 'ゲスト'
       user.nickname = 'ゲスト'
       user.profile = 'サウナー'
-      user.experience = '最近始めました'
+      user.experience_id = 2
     end
   end
 

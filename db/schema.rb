@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(version: 2021_08_21_224535) do
   create_table "chats", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "area_id", null: false
     t.integer "price_id", null: false
+    t.integer "sauna_temperature_id", null: false
+    t.integer "water_bath_id", null: false
     t.string "sauna_name", null: false
     t.text "description", null: false
     t.bigint "user_id"
@@ -73,7 +75,7 @@ ActiveRecord::Schema.define(version: 2021_08_21_224535) do
     t.string "name", null: false
     t.string "nickname", null: false
     t.text "profile", null: false
-    t.text "experience", null: false
+    t.integer "experience_id", null: false
     t.string "profile_image"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
