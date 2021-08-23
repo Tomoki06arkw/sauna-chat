@@ -10,3 +10,19 @@ ja:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
       short: "%m/%d %H:%M"
+  activerecord:
+    attributes:
+      user:
+        name: 名前
+        nickname: ニックネーム
+        profile: プロフィール
+        experience_id: サウナ歴
+      chat:
+        area_id: 地域
+        price_id: 価格
+        sauna_temperature_id: サウナの温度
+        water_bath_id: 水風呂温度
+        sauna_name: 施設名
+        description: 感想
+        image: 画像
+        

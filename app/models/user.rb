@@ -17,7 +17,7 @@ class User < ApplicationRecord
         validates :password
         validates :nickname
         validates :profile
-        validates :experience_id, numericality: { other_than: 1, message: "can't be blank"}
+        validates :experience_id, numericality: { other_than: 1, message: "を選んで下さい"}
   end
 
   mount_uploader :profile_image, ImageUploader

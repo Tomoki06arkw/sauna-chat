@@ -15,7 +15,8 @@ class ChatsController < ApplicationController
 
   def create
     @chat = Chat.create(chat_params)
-    if @chat.save
+    if @chat.valid?
+       @chat.save
       redirect_to root_path
     else
       render :new
