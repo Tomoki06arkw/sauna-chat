@@ -95,14 +95,16 @@ AWSのS3
 ・新規投稿する際に価格、場所を選択式にした。
 
 ## トップページのJSの詳細動画
-トップページ1 ![demo](https://gyazo.com/785c359602c4a66938cd598103bbd799/raw)  
-
-トップページ2 ![demo](https://gyazo.com/28116527c50f701a98e9d29ba8403739/raw)  
-
-トップページ3 ![demo](https://gyazo.com/697031fb5ae9f2805984b84fbdcd55cf/raw)  
-
-トップページ4 ![demo](https://gyazo.com/7035ca9464ddf538a44eebd00668bb81/raw)  
-
+トップページモバイル  ![demo](https://gyazo.com/091fcf96979b194adfcb89b8c8c5f083/raw) 
+  
+トップページ1  ![demo](https://gyazo.com/785c359602c4a66938cd598103bbd799/raw)  
+  
+トップページ2  ![demo](https://gyazo.com/28116527c50f701a98e9d29ba8403739/raw)  
+  
+トップページ3  ![demo](https://gyazo.com/697031fb5ae9f2805984b84fbdcd55cf/raw)  
+  
+トップページ4  ![demo](https://gyazo.com/7035ca9464ddf538a44eebd00668bb81/raw)  
+  
 # データベース設計	
 
 ## users テーブル
