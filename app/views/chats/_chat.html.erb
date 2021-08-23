@@ -2,11 +2,13 @@
   <%= link_to " #{chat.sauna_name}", chat_path(chat.id), method: :get, class: :detail__title%>
   <%= "(#{chat.area.name})"%>
   <div class="day-time">
-  <%= l chat.created_at, format: :short %><br>
-    <%= "サウナ温度"%>
-    <%= chat.sauna_temperature.name%>
-    <%= "水風呂温度"%>
-    <%= chat.water_bath.name%><br>
+    <div class="time">
+    <%= l chat.created_at, format: :short %><br>
+    </div>
+      <%= "サウナ温度"%>
+      <%= chat.sauna_temperature.name%>
+      <%= "水風呂温度"%>
+      <%= chat.water_bath.name%><br>
   </div>
   <div class="card__body">
       <div class="content-wrap animated">

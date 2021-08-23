@@ -229,8 +229,12 @@ margin-top: 50px;
 
 .detail__title {
   font-size: 20px;
-  color: lightblue;
+  color: rgb(13, 34, 41);
   text-decoration: none;
+}
+
+.detail__message_name {
+  font-size: 30px;
 }
 
 .detail__message {
@@ -250,6 +254,9 @@ margin-top: 50px;
   font-size: 25px;
 }
 
+.time {
+  font-size: 12px;
+}
 
 
 @media (max-width: 1024px) {

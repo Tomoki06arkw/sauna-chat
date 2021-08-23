@@ -93,7 +93,7 @@
 .s_01 .accordion_one .accordion_header .i_box .one_i:before, .s_01 .accordion_one .accordion_header .i_box .one_i:after {
   display: flex;
   content: '';
-  background-color: black;
+  background-color: lightblue;
   border-radius: 10px;
   width: 18px;
   height: 4px;

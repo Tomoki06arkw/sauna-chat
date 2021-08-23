@@ -14,9 +14,18 @@
       <div class="chat__body">
         <div class="chat__detail">
           <p class="detail__title"></p>
-          <p class="detail__message">
+          <p class="detail__message_name">
             <%= @chat.sauna_name %>
           </p>
+        </div>
+        <div class="day-time">
+          <div class="time">
+          <%= l @chat.created_at, format: :short %><br>
+          </div>
+            <%= "サウナ温度"%>
+            <%= @chat.sauna_temperature.name%>
+            <%= "水風呂温度"%>
+            <%= @chat.water_bath.name%><br>
         </div>
         <div class="chat__detail">
           <p class="detail__title">(値段)</p>
