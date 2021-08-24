@@ -4,10 +4,10 @@ class Chat < ApplicationRecord
   has_many :likes, dependent: :destroy
   has_one_attached :image
   extend ActiveHash::Associations::ActiveRecordExtensions
-    belongs_to :area
-    belongs_to :price
-    belongs_to :sauna_temperature
-    belongs_to :water_bath
+  belongs_to :area
+  belongs_to :price
+  belongs_to :sauna_temperature
+  belongs_to :water_bath
 
   with_options presence: true do
     with_options numericality: { other_than: 1, message: "を選んで下さい" } do
@@ -24,6 +24,7 @@ class Chat < ApplicationRecord
   def was_attached?
     self.image.attached?
   end
+  
   def self.search(search)
     if search != ""
       Chat.where('sauna_name LIKE(?)', "%#{search}%")
