@@ -10,10 +10,12 @@ class Chat < ApplicationRecord
     belongs_to :water_bath
 
   with_options presence: true do
-    validates :area_id,     numericality: { other_than: 1, message: "を選んで下さい" } 
-    validates :price_id,    numericality: { other_than: 1, message: "を選んで下さい" } 
-    validates :sauna_temperature_id, numericality:  { other_than: 1, message: "を選んで下さい" } 
-    validates :water_bath_id,           numericality:  { other_than: 1, message: "を選んで下さい" } 
+    with_options numericality: { other_than: 1, message: "を選んで下さい" } do
+      validates :area_id 
+      validates :price_id
+      validates :sauna_temperature_id
+      validates :water_bath_id
+    end
     validates :sauna_name
     validates :description
     validates :image
