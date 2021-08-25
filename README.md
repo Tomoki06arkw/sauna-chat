@@ -117,7 +117,7 @@ AWSのS3
 | password       | string  | null: false |
 | nickname       | string  | null: false |
 | profile        | text    | null: false |
-| experience_id  | itenger | null: false |
+| experience_id  | integer | null: false |
 | profile_image  | string  | ----------- |
 
 ### Association
@@ -177,3 +177,8 @@ AWSのS3
 | ------------ | ----------- | ----------- |
 | user_id      | integer     | ----------- |
 | chat_id      | integer     | ----------- |
+
+### Association
+
+- belongs_to :users
+- belongs_to :chats
