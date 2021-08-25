@@ -1,3 +1,4 @@
+/* ユーザー詳細ページ */
 .user__wrapper{
   min-height: calc(100vh - 161px);
 }
@@ -37,16 +38,15 @@
 
 }
 
-
+/* モバイルファースト */
 @media (max-width: 640px) {
   .table {
     width: 80%;
   }
-
-
 }
-@media (max-width: 400px) {
 
+/* モバイルファースト */
+@media (max-width: 400px) {
   .table{
     border-collapse: collapse;
     margin-bottom: 32px;
@@ -64,7 +64,6 @@
     width: 60%;
     padding: 16px 8px;
   }
-  
   .page--heading {
     font-size: 20px;
   }

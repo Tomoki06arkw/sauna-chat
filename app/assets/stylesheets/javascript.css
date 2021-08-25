@@ -2,6 +2,8 @@
   position:relative;
   text-align:center;
 }
+
+/* モダルcss */
 .modal {
   position:absolute;
   width:100%;
@@ -43,7 +45,7 @@
   text-decoration: none;
   color:blue;
 }
-
+/* アコーティオンcss */
 .s_01 .accordion_one {
   max-width: 600px;
   margin: 0 auto;
@@ -135,6 +137,8 @@
 .content{
   margin-top: 150px;
 }
+
+/* タイトルフェードイン・フェードアウトcss */
 .title {
   display: flex;
   overflow: hidden;
@@ -204,7 +208,7 @@
 }
 
 
-
+/* もっと見るcss */
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -272,7 +276,7 @@
 
 }
 
-
+/* モバイルファースト800 */
 @media (max-width: 800px) {
   .title{
     font-size: 28px;
@@ -292,7 +296,7 @@
   }
   
 }
-
+/* モバイルファースト400 */
 @media (max-width: 400px) {
   .title{
     font-size: 25px;
