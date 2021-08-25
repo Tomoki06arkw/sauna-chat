@@ -8,17 +8,15 @@
     </div>
 </div>
 <div class="chat_wrapper">
-  <h4 class="chat_title">今日の良かったこと。</h4>
-  <h4 class="chat_title">どのように整ったか</h4>
-  <div class="chat_comment">
-    <%= form_with model: @message do |f| %>
-      <%= f.text_field :text %>
-      <%= f.submit '送信' %>
-    <% end %>
-    <div id='messages'></div>
-      <% @messages.reverse_each do |message| %>
-        <p><%= message.text %></p>
-      <% end %>
-    </div>
-  </div>
+      <div class="chat_comment">
+          <%= form_with model: @message do |f| %>
+            <%= f.text_field :text %>
+            <%= f.submit '送信' %>
+          <% end %>
+          <div id='messages'></div>
+            <% @messages.reverse_each do |message| %>
+              <p><%= message.text %></p>
+            <% end %>
+          </div>
+      </div>
 </div>
