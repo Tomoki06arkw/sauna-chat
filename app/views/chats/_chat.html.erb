@@ -1,42 +1,42 @@
 <div class="card">
   <%= link_to " #{chat.sauna_name}", chat_path(chat.id), method: :get, class: :detail__title%>
   <%= "(#{chat.area.name})"%>
-  <div class="day-time">
-    <div class="time">
-    <%= l chat.created_at, format: :short %><br>
+    <div class="day-time">
+        <div class="time">
+        <%= l chat.created_at, format: :short %><br>
+        </div>
+          <%= "サウナ温度"%>
+          <%= chat.sauna_temperature.name%>
+          <%= "水風呂温度"%>
+          <%= chat.water_bath.name%><br>
     </div>
-      <%= "サウナ温度"%>
-      <%= chat.sauna_temperature.name%>
-      <%= "水風呂温度"%>
-      <%= chat.water_bath.name%><br>
-  </div>
-  <div class="card__body">
-      <div class="content-wrap animated">
-        <%= link_to image_tag(chat.image, class: :card__img), chat_path(chat.id), method: :get if chat.image.attached? %>
-        <div class="content-txt">
-        <% if user_signed_in? %>
-          <% if current_user.already_liked?(chat) %>
-              <%= link_to chat_likes_path(chat), method: :delete do %>
-                <i class="fas fa-heart"></i>
-              <%end%>
-              <% else %>
-              <%= link_to chat_likes_path(chat), method: :post do %>
-                <i class="fas fa-heart"></i>
+    <div class="card__body">
+        <div class="content-wrap animated">
+          <%= link_to image_tag(chat.image, class: :card__img), chat_path(chat.id), method: :get if chat.image.attached? %>
+          <div class="content-txt">
+            <% if user_signed_in? %>
+              <% if current_user.already_liked?(chat) %>
+                  <%= link_to chat_likes_path(chat), method: :delete do %>
+                    <i class="fas fa-heart"></i>
+                  <%end%>
+                  <% else %>
+                  <%= link_to chat_likes_path(chat), method: :post do %>
+                    <i class="fas fa-heart"></i>
+                  <% end %>
               <% end %>
-          <% end %>
-          <%= chat.likes.count%>
-        <% end %>
-          <p class="card__summary">
-            <%= "値段"  %><br>
-            <%= "#{chat.price.name}円" %><br>
-            <%= "感想"  %><br>
-            <%= simple_format(h chat.description.truncate(500)) %>
-          </p>
-          <%= link_to "by#{chat.user.name}", user_path(chat.user), class: :by_user %>
+              <%= chat.likes.count%>
+            <% end %>
+              <p class="card__summary">
+                <%= "値段"  %><br>
+                <%= "#{chat.price.name}円" %><br>
+                <%= "感想"  %><br>
+                <%= simple_format(h chat.description.truncate(500)) %>
+              </p>
+              <%= link_to "by#{chat.user.name}", user_path(chat.user), class: :by_user %>
+          </div>
+          <div class="more-btn">
+            <p class="open">Show more</p>
+          </div>
         </div>
-        <div class="more-btn">
-          <p class="open">Show more</p>
-        </div>
-      </div>
-  </div>
+    </div>
 </div>

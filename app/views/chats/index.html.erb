@@ -9,9 +9,9 @@
       <span>い</span>
       <span>。</span>
     </div> 
-  <h1 class="title-1">Good Löyly</h1>
-  <h1 class="title-1">Good Sauna</h1>
-  <h1 class="title-1">Build a Good Life</h1>
+    <h1 class="title-1">Good Löyly</h1>
+    <h1 class="title-1">Good Sauna</h1>
+    <h1 class="title-1">Build a Good Life</h1>
 </div> 
 <main class="main">
     <div class="page-information">
@@ -35,10 +35,10 @@
           </div>
         </div>
         <button><a href="#modal01" class="modalOpen">注意事項</a></button>
-        <%= form_with(url: search_chats_path, local: true, method: :get, class: "search-form") do |form| %>
-        <%= form.text_field :keyword, placeholder: "例）すみれの湯", class: "search-input" %>
-        <%= form.submit "検索", class: "search-btn" %>
-        <% end %>
+          <%= form_with(url: search_chats_path, local: true, method: :get, class: "search-form") do |form| %>
+          <%= form.text_field :keyword, placeholder: "例）すみれの湯", class: "search-input" %>
+          <%= form.submit "検索", class: "search-btn" %>
+          <% end %>
         <div class="card__wrapper">
             <%= render partial: "chat", collection: @chats %>
         </div>
@@ -55,64 +55,57 @@
    </div>
 </div>
 <div class="container">
-
-  <div class="heading">
-    <h2>FAQ</h2>
-  </div>
-
+    <div class="heading">
+      <h2>FAQ</h2>
+    </div>
       <div class="section s_01">
       <div class="accordion_one">
-        <div class="accordion_header">ととのうってなに？？<div class="i_box"><i class="one_i"></i></div></div>
-        <div class="accordion_inner">
-          <div class="box_one">
-            <p class="txt_a_ac">温かいサウナと冷たい水風呂へ交互に入ることで交感神経が刺激され、<br>血流が良くなることで陶酔感を得やすくなる。</p>
+          <div class="accordion_header">ととのうってなに？？<div class="i_box"><i class="one_i"></i></div></div>
+          <div class="accordion_inner">
+            <div class="box_one">
+              <p class="txt_a_ac">温かいサウナと冷たい水風呂へ交互に入ることで交感神経が刺激され、<br>血流が良くなることで陶酔感を得やすくなる。</p>
+            </div>
           </div>
-        </div>
       </div>
       <div class="accordion_one">
-        <div class="accordion_header">はじめよう！サウナライフ<div class="i_box"><i class="one_i"></i></div></div>
-        <div class="accordion_inner">
-          <div class="box_one">
-            <p class="txt_a_ac">疲れがとれて頭がスッキリ！！</p>
+          <div class="accordion_header">はじめよう！サウナライフ<div class="i_box"><i class="one_i"></i></div></div>
+          <div class="accordion_inner">
+            <div class="box_one">
+              <p class="txt_a_ac">疲れがとれて頭がスッキリ！！</p>
+            </div>
           </div>
-        </div>
       </div>
       <div class="accordion_one">
-        <div class="accordion_header">TTNTってなに？<div class="i_box"><i class="one_i"></i></div></div>
-        <div class="accordion_inner">
-          <div class="box_one">
-            <p class="txt_a_ac">ととのったーって意味です。<br>このフレーズはドラマサドウの名言です。</p>
+          <div class="accordion_header">TTNTってなに？<div class="i_box"><i class="one_i"></i></div></div>
+          <div class="accordion_inner">
+            <div class="box_one">
+              <p class="txt_a_ac">ととのったーって意味です。<br>このフレーズはドラマサドウの名言です。</p>
+            </div>
           </div>
-        </div>
       </div>
       
       <div class="accordion_one">
-        <div class="accordion_header">サウナっておじさんの集まりだよね。<br>何がいいの？<div class="i_box"><i class="one_i"></i></div></div>
-        <div class="accordion_inner">
-          <div class="box_one">
-            <p class="txt_a_ac">サウナに入ると副交感神経に働きかけ<br>リラックス効果を促進し、<br>その日のイライラを解消してくれます。心身がスッキリします。</p>
+          <div class="accordion_header">サウナっておじさんの集まりだよね。<br>何がいいの？<div class="i_box"><i class="one_i"></i></div></div>
+          <div class="accordion_inner">
+            <div class="box_one">
+              <p class="txt_a_ac">サウナに入ると副交感神経に働きかけ<br>リラックス効果を促進し、<br>その日のイライラを解消してくれます。心身がスッキリします。</p>
+            </div>
           </div>
-        </div>
       </div>
       <div class="accordion_one">
-        <div class="accordion_header">おすすめ！アサウナ!!<div class="i_box"><i class="one_i"></i></div></div>
-        <div class="accordion_inner">
-          <div class="box_one">
-            <p class="txt_a_ac">朝のサウナは素晴らしいです。<br>サウナと水風呂を２セット行うことで<br>頭がスッキリし、日中がシャッキっと過ごせます。</p>
+          <div class="accordion_header">おすすめ！アサウナ!!<div class="i_box"><i class="one_i"></i></div></div>
+          <div class="accordion_inner">
+            <div class="box_one">
+              <p class="txt_a_ac">朝のサウナは素晴らしいです。<br>サウナと水風呂を２セット行うことで<br>頭がスッキリし、日中がシャッキっと過ごせます。</p>
+            </div>
           </div>
-        </div>
       </div>
       <div class="accordion_one">
-        <div class="accordion_header">子供は入っていいの？？<div class="i_box"><i class="one_i"></i></div></div>
-        <div class="accordion_inner">
-          <div class="box_one">
-            <p class="txt_a_ac">５歳以下の子供は入っては危険です。<br>貧血を起こしてしまう可能性があるからです。</p>
+          <div class="accordion_header">子供は入っていいの？？<div class="i_box"><i class="one_i"></i></div></div>
+          <div class="accordion_inner">
+            <div class="box_one">
+              <p class="txt_a_ac">５歳以下の子供は入っては危険です。<br>貧血を起こしてしまう可能性があるからです。</p>
+            </div>
           </div>
-        </div>
       </div>
 </div>
-<footer>
-  <div class="footer-logo">
-     <p>Copyright © SAUNA-CHAT rights reserved.</p>
-  </div>
-</footer>

@@ -63,6 +63,7 @@ $(function() {
   });
 });
 
+//スライダー
 $(function(){
   $('.slider').slick({
     arrows: false,

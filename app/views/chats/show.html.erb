@@ -48,7 +48,6 @@
       </div> 
     </div>
   </div>
-  
       <div class="chat__comments">
         <% if user_signed_in? %>
           <%= form_with model: [@chat, @comment], local: true do |f| %>
@@ -73,9 +72,7 @@
           </ul>
         </div>
       </div> 
-   
-</main>
-    
+</main>  
 <footer>
   <div class="back_to_btn">
     <%= link_to 'トップページに戻る', root_path, class: :back_btn %>
