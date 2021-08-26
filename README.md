@@ -100,9 +100,7 @@ AWSのS3
   
 トップページ1  ![demo](https://gyazo.com/225f420078b6afd127ccb198a0b856a6/raw)  
   
-トップページ2  ![demo](https://gyazo.com/67f9a3426dcc8975b1ec63dec6ee44b3/raw)  
-  
-トップページ3  ![demo](https://gyazo.com/79feada27735aa1ab075041975e3ccfe/raw)  
+トップページ2  ![demo](https://gyazo.com/79feada27735aa1ab075041975e3ccfe/raw)  
   
 # データベース設計	
 
