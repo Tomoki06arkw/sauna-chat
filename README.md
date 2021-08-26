@@ -104,12 +104,31 @@ iPhone 5/SEでもビュー崩れなく実装。
 ![demo](https://gyazo.com/22f60fbe2e3e1e8d621cfa51c4b29460/raw)  
   
   
-JS実装：フェードイン・フェードアウトを利用し実装。  
-  ![demo](https://gyazo.com/225f420078b6afd127ccb198a0b856a6/raw)  
+ページング非同期通信  
+リロードすること無くページを遷移できるように実装。  
+![demo](https://gyazo.com/ce9d240725fc8b6561d112a2eacd0974/raw)  
   
   
-JS実装：ビューをスッキリするためにアコーディオンを実装。
+非同期チャット  
+スラックをイメージし非同期チャットを実装。  
+![demo](https://gyazo.com/7c8419201f7efa1871e92f4d953fa008/raw)  
+  
+  
+JS実装  
+フェードイン・フェードアウトを利用し実装。  
+  ![demo](https://gyazo.com/09ddfe5d0ecba5ee0bd86381c849e06f/raw)  
+  
+  
+JS実装  
+ビューをスッキリするためにアコーディオンを実装。  
 ![demo](https://gyazo.com/79feada27735aa1ab075041975e3ccfe/raw)  
+  
+  
+JS実装  
+Slickとmodalを使った実装。  
+![demo](https://gyazo.com/9a84e20729e542eb95ed6a7cde7e35ef/raw)   
+  
+  
   
 # データベース設計	
 
