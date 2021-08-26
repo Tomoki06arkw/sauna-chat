@@ -1,5 +1,9 @@
 # SAUNA-CHAT
-このアプリケーションは大阪限定のサウナ情報交流サイトになります。
+このアプリケーションは大阪限定のサウナ情報交流サイトになります。  
+  
+  
+![demo](https://gyazo.com/d47ccd5cb6770dd7ad60565285968b76/raw)
+  
 ## ボッチサウナーの情報交換サイト
 私はサウナ大好きボッチサウナーです。  
 一人で訪れ、ひっそりと帰るのですが本音は知り合いをたくさん作りたい。  
@@ -113,20 +117,10 @@ iPhone 5/SEでもビュー崩れなく実装。
 スラックをイメージし非同期チャットを実装。  
 ![demo](https://gyazo.com/7c8419201f7efa1871e92f4d953fa008/raw)  
   
-  
-JS実装  
-フェードイン・フェードアウトを利用し実装。  
-  ![demo](https://gyazo.com/09ddfe5d0ecba5ee0bd86381c849e06f/raw)  
-  
-  
 JS実装  
 ビューをスッキリするためにアコーディオンを実装。  
 ![demo](https://gyazo.com/79feada27735aa1ab075041975e3ccfe/raw)  
   
-  
-JS実装  
-Slickとmodalを使った実装。  
-![demo](https://gyazo.com/462013c5343bcbad5fcec2148fefbf2b/raw)   
   
   
   
