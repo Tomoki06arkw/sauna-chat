@@ -6,7 +6,12 @@ class ChatsController < ApplicationController
 
   def index
     @chats = Kaminari.paginate_array(Chat.includes(:user).reverse_order).page(params[:page]).per(4)
-
+    respond_to do |format|
+      format.html
+      format.js
+      format.json { render :json => @users }
+      format.xml  { render :xml => @users }
+    end
   end
 
   def new

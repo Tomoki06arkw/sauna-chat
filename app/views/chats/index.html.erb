@@ -39,12 +39,14 @@
           <%= form.text_field :keyword, placeholder: "例）すみれの湯", class: "search-input" %>
           <%= form.submit "検索", class: "search-btn" %>
           <% end %>
+      <div id="paginate">
         <div class="card__wrapper">
             <%= render partial: "chat", collection: @chats %>
         </div>
         <div class="chat-btn">
-              <%= paginate @chats %>
+              <%= paginate @chats, remote: true %>
         </div>
+      </div>
   </div>
 </main>
 <div class="chat-room">
