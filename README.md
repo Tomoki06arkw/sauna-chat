@@ -98,11 +98,11 @@ AWSのS3
 トップページモバイル  ![demo](https://gyazo.com/22f60fbe2e3e1e8d621cfa51c4b29460/raw) 
   
   
-トップページ1  ![demo](https://gyazo.com/28116527c50f701a98e9d29ba8403739/raw)  
+トップページ1  ![demo](https://gyazo.com/225f420078b6afd127ccb198a0b856a6/raw)  
   
-トップページ2  ![demo](https://gyazo.com/697031fb5ae9f2805984b84fbdcd55cf/raw)  
+トップページ2  ![demo](https://gyazo.com/67f9a3426dcc8975b1ec63dec6ee44b3/raw)  
   
-トップページ3  ![demo](https://gyazo.com/7035ca9464ddf538a44eebd00668bb81/raw)  
+トップページ3  ![demo](https://gyazo.com/79feada27735aa1ab075041975e3ccfe/raw)  
   
 # データベース設計	
 
