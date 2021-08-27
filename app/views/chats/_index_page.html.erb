@@ -1,6 +1,7 @@
-<div class="chat-btn">
-    <%= paginate @chats, remote: true %>
-</div>
+
 <div class="card__wrapper">
   <%= render partial: "chat", collection: @chats %>
+</div>
+<div class="chat-btn">
+    <%= paginate @chats, remote: true %>
 </div>
