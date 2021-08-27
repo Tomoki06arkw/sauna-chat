@@ -12,10 +12,11 @@ class User < ApplicationRecord
   belongs_to :experience
 
   with_options presence: true do
-      validates :name
+      validates :name,  format: {with: /\A[ぁ-んァ-ヶ一-龥々ー]+\z/} do
+      end
       validates :email
       validates :password
-      validates :nickname
+      validates :nickname, length:{ maximun: 6}
       validates :profile
       validates :experience_id, numericality: { other_than: 1, message: "を選んで下さい"}
   end
