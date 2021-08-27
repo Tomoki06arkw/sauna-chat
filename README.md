@@ -1,4 +1,4 @@
-# <span style="color: blue"> SAUNA-CHAT </span>
+#  SAUNA-CHAT 
 このアプリケーションは大阪限定のサウナ情報交流サイトになります。  
   
   
@@ -175,11 +175,11 @@ JS実装
 
 ## comments テーブル
 
-| Column     | Type          ｜Options                        |
-| -----------| --------------|--------------------------------|
-| text       | text          | null:false                     |
-| user       | references    | null: false, foreign_key: true |
-| prototype  | references    | null: false, foreign_key: true |
+| Column      | Type           | Options                          |
+| ----------- | -------------- | -------------------------------- |
+| text        |  text          | null:false                       |
+| user        | references     | null: false, foreign_key: true   |
+| prototype   | references     | null: false, foreign_key: true   |
 
 ### Association
 
