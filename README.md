@@ -1,4 +1,4 @@
-# SAUNA-CHAT
+# <span style="color: blue"> SAUNA-CHAT </span>
 このアプリケーションは大阪限定のサウナ情報交流サイトになります。  
   
   
