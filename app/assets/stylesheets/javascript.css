@@ -4,6 +4,7 @@
 }
 
 /* モダルcss */
+
 .modal {
   position:absolute;
   width:100%;
@@ -41,7 +42,7 @@
 }
 
 .modalOpen{
-  font-size: 15px;
+  font-size: 25px;
   text-decoration: none;
   color:blue;
 }
@@ -294,6 +295,10 @@
   .modal .inner {
     transform:translate(-50%,-10%);
   }
+
+  .modalOpen{
+    font-size: 15px;
+  }
   
 }
 /* モバイルファースト400 */
@@ -333,6 +338,10 @@
   .overLay {
     height:35vh;
     
+  }
+
+  .modalOpen{
+    font-size: 10px;
   }
 
 }
