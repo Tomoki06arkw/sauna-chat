@@ -25,6 +25,10 @@
   text-decoration: none;
 }
 
+.header-logo:hover{
+  color: whitesmoke;
+}
+
 .header-menu-right {
   float: right;
   display: inline-block;
