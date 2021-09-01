@@ -35,7 +35,7 @@
       </h2>
       
       <div class="card__wrapper">
-          <%= render partial: "chats/chat", collection: @users %>
+          <%= render partial: "chats/chat", collection: @user.chats %>
       </div>
       <div class="chat-btn">
           <%= paginate @users %>
