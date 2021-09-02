@@ -68,6 +68,6 @@ $(function(){
   $('.slider').slick({
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
   });
 });
