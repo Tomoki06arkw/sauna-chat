@@ -21,7 +21,7 @@ RSpec.describe User, type: :model do
     it 'passwordが空では登録できない' do
       @user.password = ''
       @user.valid?
-      expect(@user.errors.full_messages).to include "パスワードを入力してください", "パスワードis invalid. Input half-width characters.", "パスワード（確認用）とパスワードの入力が一致しません"
+      expect(@user.errors.full_messages).to include "パスワードを入力してください", "半角数字で入力して下さい", "パスワード（確認用）とパスワードの入力が一致しません"
     end
 
     it 'nicknameが空では登録できない' do

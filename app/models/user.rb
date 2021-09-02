@@ -15,7 +15,7 @@ class User < ApplicationRecord
       validates :name,  format: {with: /\A[ぁ-んァ-ヶ一-龥々ー]+\z/} do
       end
       validates :email
-      validates :password,     format: {with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i, message: "is invalid. Input half-width characters."} do
+      validates :password,     format: {with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i, message: "半角数字で入力して下さい"} do
       end
       validates :nickname, length:{ maximum: 10}
       validates :profile
