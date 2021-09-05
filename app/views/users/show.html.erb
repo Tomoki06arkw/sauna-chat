@@ -37,7 +37,9 @@
       <div class="card__wrapper">
           <%= render partial: "chats/chat", collection: @user.chats %>
       </div>
-      
+      <div class="chat-btn">
+          <%= paginate @users %>
+      </div>
     </div>
   </div>
 </div>

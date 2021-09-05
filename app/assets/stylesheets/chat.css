@@ -14,7 +14,7 @@
 
 .header-title {
   float: left;
-  padding: 0px 30px;
+  padding: 3px 30px;
 }
 
 .header-logo {
@@ -435,6 +435,6 @@ margin-bottom: 40px;
     font-size: 30px;
   }
   .header-menu-right li {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
