@@ -157,6 +157,10 @@ margin-bottom: 40px;
   font-size:40px;
 }
 
+.guest_chat_room:hover{
+  color: blue;
+}
+
 .guest_comment p{
   font-size: 25px;
 }
