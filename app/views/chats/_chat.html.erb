@@ -30,7 +30,9 @@
                 <%= "値段"  %><br>
                 <%= "#{chat.price.name}円" %><br>
                 <%= "感想"  %><br>
+                <div class="description">
                 <%= simple_format(h chat.description.truncate(500)) %>
+                </div>
               </p>
               <%= link_to "by#{chat.user.name}", user_path(chat.user), class: :by_user %>
           </div>
