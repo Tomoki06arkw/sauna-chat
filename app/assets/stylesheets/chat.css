@@ -217,6 +217,10 @@ margin-bottom: 40px;
   color: black;
 }
 
+.chat__btn:hover{
+  color:blue;
+}
+
 .detail__title {
   font-size: 20px;
   color: rgb(13, 34, 41);
