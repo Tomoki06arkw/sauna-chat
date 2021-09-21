@@ -100,7 +100,7 @@ align-items: center;
 }
 
 .card {
-width: calc((100% - 33px) / 3);
+width: calc((100% - 33px) / 2);
 margin-bottom: 35px;
 }
 
