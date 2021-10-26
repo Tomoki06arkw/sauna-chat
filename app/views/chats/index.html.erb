@@ -23,7 +23,7 @@
       <%= image_tag 'sauna3.jpg' %>
     </div>
   <div class="inner">
-        <h3 class="sub-heading">サウナに行った記録<br>口コミを残してみよう。<br></h3>
+        <h3 class="sub-heading">サウナに行った記録<br>口コミを残してみよう<br></h3>
         <div class="modal" id="modal01">
           <div class="overLay modalClose"></div>
           <div class="inner">
@@ -35,7 +35,7 @@
         </div>
         <button><a href="#modal01" class="modalOpen">注意事項</a></button>
           <%= form_with(url: search_chats_path, local: true, method: :get, class: "search-form") do |form| %>
-          <%= form.text_field :keyword, placeholder: "例）極楽湯", class: "search-input" %>
+          <%= form.text_field :keyword, placeholder: "例）すみれの湯", class: "search-input" %>
           <%= form.submit "検索", class: "search-btn" %>
           <% end %>
       <div id="paginate">
